@@ -11,6 +11,7 @@ import SwiftUI
 struct button_camera: View {
     var body: some View {
          HStack{
+             
                                     Button {
                                     } label: {
                                         Image(systemName: "camera" )
@@ -24,9 +25,11 @@ struct button_camera: View {
                                                     .stroke(lineWidth: 0.20)
                                             )
                                     }
-                                    Button {
-            
-                                    } label: {
+             
+             
+             Button {
+             }label: {
+                
                                         Image(systemName: "camera" )
                                             .foregroundColor(Color("orange"))
             
@@ -40,7 +43,7 @@ struct button_camera: View {
                                             )
             
                                     }
-            
+                            
                                     Button {
             
                                     } label: {

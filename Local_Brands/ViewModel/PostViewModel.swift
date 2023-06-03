@@ -10,7 +10,7 @@ import Foundation
 
 class PostViewModel: ObservableObject {
     @Published var posts = [Post]()
-    
+
     init() {
         posts.append(Post(id: 1, imageName: "1"))
         posts.append(Post(id: 2, imageName: "2"))
@@ -27,3 +27,41 @@ class PostViewModel: ObservableObject {
 
     }
 }
+//
+//import SwiftUI
+//
+//struct Grid: View {
+//    @State private var showModel = false
+//    @State var selectedImage = ""
+//
+//    var images: [String] =
+//    ["1" ,"2" ,"3" ,"4" ,"5" ,"6" ,"7" ,"8" ,"9" ,"10" ,"11" ,"12" ]
+//
+//    var columnGrid: [GridItem] = [GridItem(.flexible(),
+//    spacing: 1), GridItem(.flexible(), spacing: 1),
+//    GridItem(.flexible(), spacing: 1)]
+//
+//    var body: some View {
+//        LazyVGrid(columns: columnGrid, spacing: 1){
+//            ForEach(images.indices, id: \.self){ index in
+//                Image(images[index])
+//                    .resizable()
+//                    .scaledToFit()
+//                    .frame(width: (UIScreen.main.bounds.width / 3) - 1, height:
+//                        (UIScreen.main.bounds.width / 3) - 1)
+//                    .clipped()
+//                    .onTapGesture {
+//                        selectedImage = images[index]
+//                        showModel = true
+//                    }
+//            }
+//        }
+//        .fullScreenCover(isPresented: $showModel){
+//        }
+//    }
+//            }
+//            struct Grid_Previews: PreviewProvider {
+//    static var previews: some View {
+//        Grid()
+//    }
+//}

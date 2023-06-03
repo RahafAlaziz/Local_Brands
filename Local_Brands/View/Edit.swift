@@ -94,19 +94,7 @@ struct ProFileView: View {
                         }
                         .padding(.horizontal)
                         .padding(2)
-                    
-                    
-                  //  TextField("اسم المتجر على انستقرام", text: $ProFileView)
-                   //     .multilineTextAlignment(.trailing)
-                  //      .padding(.trailing,2)
-                  //      .padding(7)
-                    //    .background(.white)
-                      //  .overlay {
-                        //    RoundedRectangle(cornerRadius: 5)
-                          //      .stroke(.white, lineWidth:4)
-                      //  }
-                     //   .padding(.horizontal)
-                     //   .padding(2)
+            
                     
                     
                     TextField("نبذه مختصره عن المتجر", text: $ProFileView)
