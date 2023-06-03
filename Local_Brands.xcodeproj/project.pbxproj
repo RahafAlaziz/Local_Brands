@@ -24,6 +24,7 @@
 		37E32B342A2B65D7006F6582 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E32B332A2B65D7006F6582 /* Post.swift */; };
 		37E32B362A2B65ED006F6582 /* PostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E32B352A2B65ED006F6582 /* PostViewModel.swift */; };
 		37E32B392A2B676A006F6582 /* ASCollectionView in Frameworks */ = {isa = PBXBuildFile; productRef = 37E32B382A2B676A006F6582 /* ASCollectionView */; };
+		37E32B452A2B9087006F6582 /* ImagePicker1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E32B442A2B9087006F6582 /* ImagePicker1.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		37E32B312A2B65B2006F6582 /* button camera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "button camera.swift"; sourceTree = "<group>"; };
 		37E32B332A2B65D7006F6582 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		37E32B352A2B65ED006F6582 /* PostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewModel.swift; sourceTree = "<group>"; };
+		37E32B442A2B9087006F6582 /* ImagePicker1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker1.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +120,7 @@
 				37E32B1F2A2B6513006F6582 /* Sign in.swift */,
 				37E32B212A2B6521006F6582 /* Edit.swift */,
 				37E32B232A2B653B006F6582 /* ImagePicker.swift */,
+				37E32B442A2B9087006F6582 /* ImagePicker1.swift */,
 				37E32B252A2B654E006F6582 /* SearchBar.swift */,
 				37E32B272A2B6567006F6582 /* ProfileHeader.swift */,
 				37E32B292A2B6572006F6582 /* PostCell.swift */,
@@ -213,6 +216,7 @@
 				37E32B322A2B65B2006F6582 /* button camera.swift in Sources */,
 				37E32B342A2B65D7006F6582 /* Post.swift in Sources */,
 				37E32B0F2A2B61ED006F6582 /* ContentView.swift in Sources */,
+				37E32B452A2B9087006F6582 /* ImagePicker1.swift in Sources */,
 				37E32B2A2A2B6572006F6582 /* PostCell.swift in Sources */,
 				37E32B302A2B65A4006F6582 /* See More Details.swift in Sources */,
 				37E32B2E2A2B658C006F6582 /* share.swift in Sources */,
