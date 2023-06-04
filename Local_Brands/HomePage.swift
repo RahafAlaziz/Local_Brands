@@ -8,7 +8,7 @@
 import SwiftUI
 import AVKit
 
-struct Local_Brand: View {
+struct HomePage: View {
     @State var isShowingSheet: Bool = false
     @State var isShowingFullScreen: Bool = false
     @State var isShowingFullScreen1: Bool = false
@@ -18,8 +18,8 @@ struct Local_Brand: View {
     @State var top = 0
     @State var date = [
         
-        Video(id: 0, player: AVPlayer (url: URL(fileURLWithPath: Bundle.main.path(forResource: "Video1", ofType: ".mp4")!)), replay: false),
-        Video(id: 1, player: AVPlayer (url: URL(fileURLWithPath: Bundle.main.path(forResource: "Video2", ofType: ".mp4")!)), replay: false),
+        Video(id: 0, player: AVPlayer (url: URL(fileURLWithPath: Bundle.main.path(forResource: "Video2", ofType: ".mp4")!)), replay: false),
+        Video(id: 1, player: AVPlayer (url: URL(fileURLWithPath: Bundle.main.path(forResource: "Video1", ofType: ".mp4")!)), replay: false),
         Video(id: 2, player: AVPlayer (url: URL(fileURLWithPath: Bundle.main.path(forResource: "Video3", ofType: ".mp4")!)), replay: false),
         Video(id: 3, player: AVPlayer (url: URL(fileURLWithPath: Bundle.main.path(forResource: "Video4", ofType: ".mp4")!)), replay: false),
         Video(id: 4, player: AVPlayer (url: URL(fileURLWithPath: Bundle.main.path(forResource: "Video5", ofType: ".mp4")!)), replay: false),
@@ -43,9 +43,9 @@ struct Local_Brand: View {
 
                         } label: {
                             Image(systemName: "magnifyingglass.circle" )
-                                .foregroundColor(Color("orange"))
+                                .foregroundColor(.white)
                                 .font(.title)
-                                .padding(8)
+                                .padding(.trailing,80)
                         }
                         Button(action: {
                             
@@ -53,34 +53,40 @@ struct Local_Brand: View {
                             
                         }){
                             
-                            Text("Favorite")
-                                .foregroundColor(self.top == 0 ? .white : Color.white.opacity(0.45 ))
-                                .fontWeight(self.top == 0 ? .bold : .none)
-                                .padding(.vertical)
+                            NavigationLink(destination: Favorite()) {
+                                Text ("Favorite")}
+                            .foregroundColor(self.top == 1 ? .white : Color.white.opacity(0.45 ))
+                            
+                            Button(action: {
+                                
+                                self.top = 1
+                                
+                            }){
+                                
+                                Text("For You")
+                                    .foregroundColor(self.top == 0 ? .white : Color.white.opacity(0.45 ))
+                                    .fontWeight(self.top == 0 ? .bold : .none)
+                                    .padding(.vertical)
+                                
+                                
+                            }
                             
                         }
+//                            Text("Favorite")
+//                                .foregroundColor(self.top == 0 ? .white : Color.white.opacity(0.45 ))
+//                                .fontWeight(self.top == 0 ? .bold : .none)
+//                                .padding(.vertical)
+                            
                         
-                        Button(action: {
-                            
-                            self.top = 1
-                            
-                        }){
-                            
-                            Text("For You")
-                                .foregroundColor(self.top == 1 ? .white : Color.white.opacity(0.45 ))
-                                .fontWeight(self.top == 1 ? .bold : .none)
-                                .padding(.vertical)
-                            
-                        }
                         Button {
                             isShowingFullScreen1.toggle()
 
                         } label: {
                             Image(systemName: "person.circle" )
-                                .foregroundColor(Color("orange"))
+                                .foregroundColor(.white)
                                 .font(.title)
 
-                            .padding(8)}
+                            .padding(.leading,80)}
                     }
                     
                     Spacer()
@@ -294,7 +300,7 @@ struct Local_Brand: View {
         }
     }
     
-    class Host : UIHostingController<Local_Brand>{
+    class Host : UIHostingController<HomePage>{
         
         override var preferredStatusBarStyle: UIStatusBarStyle {
             
@@ -397,9 +403,9 @@ struct Local_Brand: View {
     }
     
     
-    struct Local_Brand_Previews: PreviewProvider {
+    struct HomePage_Previews: PreviewProvider {
         static var previews: some View {
-            Local_Brand()
+            HomePage()
         }
     }
 }
