@@ -18,16 +18,20 @@ struct See_More_Details: View {
                     showSheet.toggle()
                 } label: {
                     
-                    Text("لمشاهدة التفاصيل")
-                        .bold()
-                        .foregroundColor(Color.white)
-                        .frame(width: 214.13, height: 39)
-                        .background(Color("orange"))
-                        .cornerRadius(10)
-                    
+                    VStack{
+                        Image("0")
+                        
+                        Text("لمشاهدة التفاصيل")
+                            .bold()
+                            .foregroundColor(Color.white)
+                            .frame(width: 214.13, height: 39)
+                            .background(Color("orange"))
+                            .cornerRadius(10)
+                    }
                         .sheet(isPresented: $showSheet) {
                             VStack{
-                                Image("0")
+                                TabView1()
+                               
                                 Text("قميص مزرود")
                                 Text("٣١٧ ر.س")
                                     .presentationDetents([.large, .medium, .fraction(0.45)])
