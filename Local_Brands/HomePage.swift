@@ -207,12 +207,16 @@ struct Local_Brand: View {
             
             .background(Color.black.edgesIgnoringSafeArea(.all))
             .edgesIgnoringSafeArea(.all)
+            
         } .sheet(isPresented: $isShowingSheet){
             share()
-          
-        }.fullScreenCover(isPresented: $isShowingFullScreen) {
-          
+              
+                  
+        }.fullScreenCover(isPresented: $isShowingFullScreen1) {
+            Signin()
         }
+//          .fullScreenCover(isPresented: $isShowingFullScreen) {
+//            SearchBar()
     }
     
     struct PlayerView : View {

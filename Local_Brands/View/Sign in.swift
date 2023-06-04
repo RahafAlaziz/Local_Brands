@@ -72,7 +72,7 @@ struct Signin: View {
                             .padding(.horizontal)
                             .padding(2)
                         
-                        TextField("رقم السجل التجاري او رقم معروف",text:$NO)
+                        TextField("رقم السجل التجاري  ",text:$NO)
                             .multilineTextAlignment(.trailing)
                             .padding(.trailing,2)
                             .padding(7)
