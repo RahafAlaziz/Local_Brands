@@ -9,6 +9,8 @@ import SwiftUI
 import AVKit
 
 struct Local_Brand: View {
+    let link = URL(string: "https://www.hackingwithswift.com")!
+
     @State var isShowingSheet: Bool = false
     @State var isShowingFullScreen: Bool = false
     @State var isShowingFullScreen1: Bool = false
@@ -131,20 +133,28 @@ struct Local_Brand: View {
                             //                            }
                             //                        }
                             
+                            ShareLink(item: link) {
+                                Label("", systemImage: "arrowshape.turn.up.forward")
+                            }
+                            
                             Button(action: {
                                 isShowingSheet.toggle()
                             }) {
-                                VStack(spacing :8){
-                                    
-                                    Image(systemName: "arrowshape.turn.up.forward")
-                                        .font(.title)
-                                        .foregroundColor(.white)
-                                    
-                                    
-                                    Text("share")
-                                        .foregroundColor(.white)
-                                    
-                                }
+                                
+                                
+                                
+                                
+//                                VStack(spacing :8){
+//                                    
+//                                    Image(systemName: "arrowshape.turn.up.forward")
+//                                        .font(.title)
+//                                        .foregroundColor(.white)
+//                                    
+//                                    
+//                                    Text("share")
+//                                        .foregroundColor(.white)
+//                                    
+//                                }
                             }
                         }
                         .padding(.bottom,55)

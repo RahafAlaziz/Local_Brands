@@ -18,18 +18,25 @@ struct share_Previews: PreviewProvider {
     
 //
 struct shareit : View {
+    let link = URL(string: "https://www.hackingwithswift.com")!
+
     @State var items : [Any] = []
-    @State var sheet = false
+//    @State var sheet = false
     
     var body: some View{
         
         VStack{
+            ShareLink(item: link)
+                ShareLink("Learn Swift here", item: link)
+                ShareLink(item: link) {
+                    Label("Learn Swift here", systemImage: "swift")
+                }
             Button(action: {
                 //  adding items to be shared
                 items.removeAll()
                 items.append(UIImage(named:"0")!)
                 
-                sheet.toggle()
+               // sheet.toggle()
                 
             }, label: {
                 
@@ -38,26 +45,23 @@ struct shareit : View {
                 
             })
         }
-        .sheet(isPresented: $sheet, content: {
-
-            ShareSheet(items: items)
-        })
+       
         }
     }
-
-// share sheet
-struct ShareSheet : UIViewControllerRepresentable{
-    
-    // the data you need to share...
-    var items : [Any]
-    func makeUIViewController(context: Context) ->  UIActivityViewController {
-        
-        let controller = UIActivityViewController(activityItems: items, applicationActivities: nil )
-        
-        return controller
-        
-    }
-    func updateUIViewController(_ uiViewController: UIActivityViewController, context: Context) {
-        
-    }
-}
+//
+//// share sheet
+//struct ShareSheet : UIViewControllerRepresentable{
+//    
+//    // the data you need to share...
+//    var items : [Any]
+//    func makeUIViewController(context: Context) ->  UIActivityViewController {
+//        
+//        let controller = UIActivityViewController(activityItems: items, applicationActivities: nil )
+//        
+//        return controller
+//        
+//    }
+//    func updateUIViewController(_ uiViewController: UIActivityViewController, context: Context) {
+//        
+//    }
+//}
