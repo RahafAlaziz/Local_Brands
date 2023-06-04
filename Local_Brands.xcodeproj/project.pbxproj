@@ -25,6 +25,7 @@
 		37E32B342A2B65D7006F6582 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E32B332A2B65D7006F6582 /* Post.swift */; };
 		37E32B362A2B65ED006F6582 /* PostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E32B352A2B65ED006F6582 /* PostViewModel.swift */; };
 		37E32B392A2B676A006F6582 /* ASCollectionView in Frameworks */ = {isa = PBXBuildFile; productRef = 37E32B382A2B676A006F6582 /* ASCollectionView */; };
+		DC0C109E2A2CB777003563D3 /* Favorite.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0C109D2A2CB777003563D3 /* Favorite.swift */; };
 		DC1E18392A2B812F001BECE5 /* Video1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = DC1E18332A2B812F001BECE5 /* Video1.mp4 */; };
 		DC1E183A2A2B812F001BECE5 /* Video5.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = DC1E18342A2B812F001BECE5 /* Video5.mp4 */; };
 		DC1E183B2A2B812F001BECE5 /* Video2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = DC1E18352A2B812F001BECE5 /* Video2.mp4 */; };
@@ -53,6 +54,7 @@
 		37E32B312A2B65B2006F6582 /* button camera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "button camera.swift"; sourceTree = "<group>"; };
 		37E32B332A2B65D7006F6582 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		37E32B352A2B65ED006F6582 /* PostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewModel.swift; sourceTree = "<group>"; };
+		DC0C109D2A2CB777003563D3 /* Favorite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Favorite.swift; sourceTree = "<group>"; };
 		DC1E18332A2B812F001BECE5 /* Video1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Video1.mp4; sourceTree = "<group>"; };
 		DC1E18342A2B812F001BECE5 /* Video5.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Video5.mp4; sourceTree = "<group>"; };
 		DC1E18352A2B812F001BECE5 /* Video2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Video2.mp4; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				DC1E183F2A2B8158001BECE5 /* HomePage.swift */,
+				DC0C109D2A2CB777003563D3 /* Favorite.swift */,
 				37E32B1C2A2B64CF006F6582 /* View */,
 				37E32B1B2A2B64BB006F6582 /* ViewModel */,
 				37E32B1A2A2B64AA006F6582 /* Model */,
@@ -247,6 +250,7 @@
 				37E32B302A2B65A4006F6582 /* See More Details.swift in Sources */,
 				378C13E82A2C30D700484CEC /* TabView.swift in Sources */,
 				DC1E18402A2B8158001BECE5 /* HomePage.swift in Sources */,
+				DC0C109E2A2CB777003563D3 /* Favorite.swift in Sources */,
 				37E32B2E2A2B658C006F6582 /* share.swift in Sources */,
 				37E32B242A2B653B006F6582 /* ImagePicker.swift in Sources */,
 				37E32B222A2B6521006F6582 /* Edit.swift in Sources */,

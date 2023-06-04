@@ -95,7 +95,7 @@ struct Local_Brand: View {
                                 
                             }) {
                                 
-                                Image("pic")
+                                Image("profilepic")
                                     .renderingMode(.original)
                                     .resizable()
                                     .frame(width: 55,height: 55)
@@ -104,7 +104,7 @@ struct Local_Brand: View {
                             Button(action: {
                                 
                             }){
-                                VStack(spacing :-10){
+                                VStack(spacing : 8){
                                     
                                     Image(systemName: "suit.heart")
                                         .font(.title)
