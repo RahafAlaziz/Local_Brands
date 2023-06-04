@@ -36,10 +36,14 @@ struct Favorite: View {
                             
                         }){
                             
-                            Text("For You")
-                                .foregroundColor(self.top == 1 ? .black : Color.black.opacity(0.45 ))
-                                .fontWeight(self.top == 1 ? .bold : .none)
-                                .padding(.vertical)
+                            NavigationLink(destination: HomePage()) {
+                                Text ("For You")}
+                            .foregroundColor(self.top == 1 ? .black : Color.black.opacity(0.45 ))
+                            
+//                            Text("For You")
+//                                .foregroundColor(self.top == 1 ? .black : Color.black.opacity(0.45 ))
+//                                .fontWeight(self.top == 1 ? .bold : .none)
+//                                .padding(.vertical)
                         }
                     }
                     
