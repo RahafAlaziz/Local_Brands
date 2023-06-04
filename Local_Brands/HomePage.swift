@@ -50,7 +50,8 @@ struct HomePage: View {
                         Button(action: {
                             
                             self.top = 0
-                            
+                        
+                        
                         }){
                             
                             NavigationLink(destination: Favorite()) {
@@ -231,13 +232,14 @@ struct HomePage: View {
         
         var body: some View {
             
-            VStack(spacing : 0){
+            VStack(spacing : 2.7){
                 
                 ForEach(0..<self.date.count){i in
                     
                     ZStack{
                         
                         Player(player: self.date[i].player)
+                        
                         
                             .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
                             .offset(y: -7)
