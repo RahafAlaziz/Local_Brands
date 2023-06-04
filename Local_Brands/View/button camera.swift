@@ -9,6 +9,7 @@
 import SwiftUI
 
 struct button_camera: View {
+    
     var body: some View {
          HStack{
              
@@ -41,6 +42,7 @@ struct button_camera: View {
                                                     .stroke(lineWidth: 0.20)
             
                                             )
+                                          
             
                                     }
                             

@@ -157,11 +157,19 @@ struct Local_Brand: View {
 //                                }
                             }
                         }
+                        
+                        
+                        
                         .padding(.bottom,55)
                         .padding(.trailing)
                         
+                      
+                        
                     }
-                    
+                    HStack{
+                        Spacer()
+                        See_More_Details()
+                    }
                     HStack(spacing : 0){
                         
                         Button (action:{

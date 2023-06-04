@@ -12,7 +12,7 @@ struct See_More_Details: View {
     @State private var showSheet1: Bool = false
     
     var body: some View {
-        NavigationView  {
+    
             ZStack {
                 Button  { print("s")
                     showSheet.toggle()
@@ -52,7 +52,7 @@ struct See_More_Details: View {
                         }
                 }
             }
-        }
+        
     }
     
     struct See_More_Details_Previews: PreviewProvider {
