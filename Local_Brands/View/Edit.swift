@@ -47,7 +47,7 @@ struct ProFileView: View {
                             
                         } else {
                             
-                            Image("profilephoto")
+                            Image("proFileImage")
                                 .resizable()
                                 .frame(width: 120, height: 120)
                                 .clipShape(Circle())
@@ -64,7 +64,7 @@ struct ProFileView: View {
                 }
                 
                 .sheet(isPresented: $openCameraRoll){
-                    ImagePicker(selectedImage: $imageSelected   , sourceType: .photoLibrary )
+                    ImagePicker(selectedImage: imageSelected   , sourceType: .photoLibrary )
                     
                 }
                 .padding(.bottom,420)

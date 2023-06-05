@@ -36,7 +36,7 @@ struct Favorite: View {
                             
                         }){
                             
-                            NavigationLink(destination: HomePage()) {
+//                            NavigationLink(destination: HomePage()) {
                                 Text ("For You")}
                             .foregroundColor(self.top == 1 ? .black : Color.black.opacity(0.45 ))
                             
@@ -115,7 +115,7 @@ struct Favorite: View {
             }
         }
     }
-}
+
 struct Favorite_Previews: PreviewProvider {
     static var previews: some View {
         Favorite()

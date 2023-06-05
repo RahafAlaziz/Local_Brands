@@ -39,15 +39,19 @@ struct Local_Brand: View {
                     
                     HStack(alignment: .lastTextBaseline) {
 //                        .spacing:17
-                        
-                        Button {
-                            isShowingFullScreen.toggle()
-
-                        } label: {
-                            Image(systemName: "magnifyingglass.circle" )
-                                .foregroundColor(.white)
-                                .font(.title)
-                                .padding(.trailing,80)
+                       
+//                        Button {
+//                            isShowingFullScreen.toggle()
+//
+//
+//                        } label: {
+                            
+                            NavigationLink(destination:    SearchBar(text: "")) {
+                                Image(systemName: "magnifyingglass.circle" )
+                                    .foregroundColor(.white)
+                                    .font(.title)
+                                    .padding(.trailing,80)
+//                            }
                         }
                         Button(action: {
                             
@@ -57,7 +61,9 @@ struct Local_Brand: View {
                         }){
                             
                             NavigationLink(destination: Favorite()) {
-                                Text ("Favorite")}
+                                Text ("Favorite")
+                                
+                            }
                             .foregroundColor(self.top == 1 ? .white : Color.white.opacity(0.45 ))
                             
                             Button(action: {
@@ -320,7 +326,7 @@ struct Local_Brand: View {
         }
     }
     
-    class Host : UIHostingController<HomePage>{
+    class Host : UIHostingController<Local_Brand>{
         
         override var preferredStatusBarStyle: UIStatusBarStyle {
             
@@ -425,7 +431,7 @@ struct Local_Brand: View {
     
     struct HomePage_Previews: PreviewProvider {
         static var previews: some View {
-            HomePage()
+            Local_Brand()
         }
     }
 }

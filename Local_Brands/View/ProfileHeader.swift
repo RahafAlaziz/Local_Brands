@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct ProfileHeader: View {
+    @State var isShowingSheet: Bool = false
+
     var body: some View {
         NavigationView{
             ZStack {
@@ -49,14 +51,18 @@ struct ProfileHeader: View {
                     
                     
                 }
-                
+                .sheet(isPresented: $isShowingSheet ){
+                    ImagePicker(selectedImage: UIImage())
+                    
+                    
+                }
             }                    .toolbar {
                 ToolbarItemGroup(placement:
                         .navigationBarLeading) {
                             
                             
                             Button(action: {
-                                
+                                isShowingSheet = true
                             }, label: {
                                 Image(systemName: "plus.app")
                                     .font(.system(size: 18))
