@@ -36,79 +36,118 @@ struct Favorite: View {
                             
                         }){
                             
-//                            NavigationLink(destination: HomePage()) {
+                            NavigationLink(destination: Local_Brand()) {
                                 Text ("For You")}
                             .foregroundColor(self.top == 1 ? .black : Color.black.opacity(0.45 ))
                             
-//                            Text("For You")
-//                                .foregroundColor(self.top == 1 ? .black : Color.black.opacity(0.45 ))
-//                                .fontWeight(self.top == 1 ? .bold : .none)
-//                                .padding(.vertical)
+                            //                            Text("For You")
+                            //                                .foregroundColor(self.top == 1 ? .black : Color.black.opacity(0.45 ))
+                            //                                .fontWeight(self.top == 1 ? .bold : .none)
+                            //                                .padding(.vertical)
                         }
                     }
                     
                     Spacer()
                     
                     HStack{
-                        
-                        Image("p1")
-                            .resizable()
-                            .aspectRatio(contentMode: .fill)
-                            .frame(width: 180 ,height: 270)
-                            .cornerRadius(20)
-                            .offset(x: -0 , y: 30)
-                        .shadow(color: .black.opacity(0.2), radius: 11)
-                        
-                        Image("p4")
-                            .resizable()
-                            .aspectRatio(contentMode: .fill)
-                            .frame(width: 180 ,height: 270)
-                            .cornerRadius(20)
-                            .offset(x: -0 , y: 30)
-                            .shadow(color: .black.opacity(0.2), radius: 11)
-                    }
-                    
-                   
-                    VStack{
-                        HStack{
-                            
-                            Image("p5")
+                        VStack{
+                            Image("p1")
                                 .resizable()
-                                .aspectRatio(contentMode: .fill)
+                            //  .aspectRatio(contentMode: .fill)
                                 .frame(width: 180 ,height: 270)
                                 .cornerRadius(20)
-                                .offset(x: -0 , y: 30)
-                            .shadow(color: .black.opacity(0.2), radius: 11)
-                            
-                            Image("p3")
-                                .resizable()
-                                .aspectRatio(contentMode: .fill)
-                                .frame(width: 180 ,height: 270)
-                                .cornerRadius(20)
-                                .offset(x: -0 , y: 30)
+                            //    .offset(x: -0 , y: 30)
                                 .shadow(color: .black.opacity(0.2), radius: 11)
+                            
+                            Text(" نايا")
+                                .font(.title3)
+                                .fontWeight(.bold)
+                            Text("قميص كلاسيكي مطرز")}
+                        
+                        VStack{
+                            
+                            Image("p4")
+                                .resizable()
+                            // .aspectRatio(contentMode: .fill)
+                                .frame(width: 180 ,height: 270)
+                                .cornerRadius(20)
+                            // .offset(x: -0 , y: 30)
+                                .shadow(color: .black.opacity(0.2), radius: 11)
+                            
+                            Text(" مزرود")
+                                .font(.title3)
+                                .fontWeight(.bold)
+                            Text("هودي كلاسيكي")
                         }
                     }
                     
-                    .padding()
-                    VStack{
-                        HStack{
-                            
-                            Image("p1")
-                                .resizable()
-                                .aspectRatio(contentMode: .fill)
-                                .frame(width: 180 ,height: 270)
-                                .cornerRadius(20)
-                                .offset(x: -0 , y: 30)
-                            .shadow(color: .black.opacity(0.2), radius: 11)
-                            
+                    
+                    HStack{
+                        VStack{
                             Image("p5")
                                 .resizable()
-                                .aspectRatio(contentMode: .fill)
+                            // .aspectRatio(contentMode: .fill)
                                 .frame(width: 180 ,height: 270)
                                 .cornerRadius(20)
-                                .offset(x: -0 , y: 30)
+                            //    .offset(x: -0 , y: 30)
                                 .shadow(color: .black.opacity(0.2), radius: 11)
+                            
+                            Text(" هودي مزرود")
+                                .font(.title3)
+                            .fontWeight(.bold)
+                            Text("قميص مزرود للجنسين")
+                        }
+                        
+                        
+                        VStack{
+                            
+                            Image("p3")
+                                .resizable()
+                            //   .aspectRatio(contentMode: .fill)
+                                .frame(width: 180 ,height: 270)
+                                .cornerRadius(20)
+                            //   .offset(x: -0 , y: 30)
+                                .shadow(color: .black.opacity(0.2), radius: 11)
+                            
+                            Text(" هاكت")
+                                .font(.title3)
+                            .fontWeight(.bold)
+                            Text("تيشيرت بعده الوان")
+                    }
+                }
+                    .padding()
+                    
+                    
+                        HStack{
+                            VStack{
+                                Image("p1")
+                                    .resizable()
+                                //   .aspectRatio(contentMode: .fill)
+                                    .frame(width: 180 ,height: 270)
+                                    .cornerRadius(20)
+                                //  .offset(x: -0 , y: 30)
+                                    .shadow(color: .black.opacity(0.2), radius: 11)
+                                
+                                Text(" مزرود")
+                                    .font(.title3)
+                                .fontWeight(.bold)
+                                Text("هودي مزين كلاسيكي")
+                            }
+                            VStack{
+                                
+                                Image("p5")
+                                    .resizable()
+                                //    .aspectRatio(contentMode: .fill)
+                                    .frame(width: 180 ,height: 270)
+                                    .cornerRadius(20)
+                                //    .offset(x: -0 , y: 30)
+                                    .shadow(color: .black.opacity(0.2), radius: 11)
+                                
+                                Text(" نايا")
+                                    .font(.title3)
+                                .fontWeight(.bold)
+                                Text("قميص كلاسيكي")
+                            }
                         }
                     }
                 }
@@ -116,8 +155,9 @@ struct Favorite: View {
         }
     }
 
-struct Favorite_Previews: PreviewProvider {
-    static var previews: some View {
-        Favorite()
+    struct Favorite_Previews: PreviewProvider {
+        static var previews: some View {
+            Favorite()
+        }
     }
-}
+
