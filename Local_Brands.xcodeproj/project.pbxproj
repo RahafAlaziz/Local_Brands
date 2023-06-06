@@ -16,7 +16,6 @@
 		37E32B202A2B6513006F6582 /* Sign in.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E32B1F2A2B6513006F6582 /* Sign in.swift */; };
 		37E32B222A2B6521006F6582 /* Edit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E32B212A2B6521006F6582 /* Edit.swift */; };
 		37E32B242A2B653B006F6582 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E32B232A2B653B006F6582 /* ImagePicker.swift */; };
-		37E32B262A2B654E006F6582 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E32B252A2B654E006F6582 /* SearchBar.swift */; };
 		37E32B282A2B6567006F6582 /* ProfileHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E32B272A2B6567006F6582 /* ProfileHeader.swift */; };
 		37E32B2A2A2B6572006F6582 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E32B292A2B6572006F6582 /* PostCell.swift */; };
 		37E32B2C2A2B6582006F6582 /* add post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E32B2B2A2B6582006F6582 /* add post.swift */; };
@@ -26,6 +25,12 @@
 		37E32B342A2B65D7006F6582 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E32B332A2B65D7006F6582 /* Post.swift */; };
 		37E32B362A2B65ED006F6582 /* PostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E32B352A2B65ED006F6582 /* PostViewModel.swift */; };
 		37E32B392A2B676A006F6582 /* ASCollectionView in Frameworks */ = {isa = PBXBuildFile; productRef = 37E32B382A2B676A006F6582 /* ASCollectionView */; };
+		43C2A42E2A2FC1F700D4B05A /* SearchPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C2A42D2A2FC1F700D4B05A /* SearchPage.swift */; };
+		43C2A4302A2FC2CE00D4B05A /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C2A42F2A2FC2CE00D4B05A /* SearchBar.swift */; };
+		43C2A4322A2FC32E00D4B05A /* Splash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C2A4312A2FC32E00D4B05A /* Splash.swift */; };
+		43C2A4342A2FC35700D4B05A /* Onboarding2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C2A4332A2FC35700D4B05A /* Onboarding2.swift */; };
+		43C2A4362A2FC37600D4B05A /* StartButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C2A4352A2FC37600D4B05A /* StartButtonView.swift */; };
+		43C2A4382A2FC39700D4B05A /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C2A4372A2FC39700D4B05A /* Test.swift */; };
 		DC0C109E2A2CB777003563D3 /* Favorite.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0C109D2A2CB777003563D3 /* Favorite.swift */; };
 		DC1E18392A2B812F001BECE5 /* Video1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = DC1E18332A2B812F001BECE5 /* Video1.mp4 */; };
 		DC1E183A2A2B812F001BECE5 /* Video5.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = DC1E18342A2B812F001BECE5 /* Video5.mp4 */; };
@@ -47,7 +52,6 @@
 		37E32B1F2A2B6513006F6582 /* Sign in.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sign in.swift"; sourceTree = "<group>"; };
 		37E32B212A2B6521006F6582 /* Edit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Edit.swift; sourceTree = "<group>"; };
 		37E32B232A2B653B006F6582 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
-		37E32B252A2B654E006F6582 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		37E32B272A2B6567006F6582 /* ProfileHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeader.swift; sourceTree = "<group>"; };
 		37E32B292A2B6572006F6582 /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 		37E32B2B2A2B6582006F6582 /* add post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "add post.swift"; sourceTree = "<group>"; };
@@ -56,6 +60,12 @@
 		37E32B312A2B65B2006F6582 /* button camera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "button camera.swift"; sourceTree = "<group>"; };
 		37E32B332A2B65D7006F6582 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		37E32B352A2B65ED006F6582 /* PostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewModel.swift; sourceTree = "<group>"; };
+		43C2A42D2A2FC1F700D4B05A /* SearchPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPage.swift; sourceTree = "<group>"; };
+		43C2A42F2A2FC2CE00D4B05A /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		43C2A4312A2FC32E00D4B05A /* Splash.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Splash.swift; sourceTree = "<group>"; };
+		43C2A4332A2FC35700D4B05A /* Onboarding2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding2.swift; sourceTree = "<group>"; };
+		43C2A4352A2FC37600D4B05A /* StartButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartButtonView.swift; sourceTree = "<group>"; };
+		43C2A4372A2FC39700D4B05A /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
 		DC0C109D2A2CB777003563D3 /* Favorite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Favorite.swift; sourceTree = "<group>"; };
 		DC1E18332A2B812F001BECE5 /* Video1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Video1.mp4; sourceTree = "<group>"; };
 		DC1E18342A2B812F001BECE5 /* Video5.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Video5.mp4; sourceTree = "<group>"; };
@@ -146,7 +156,6 @@
 				378C13EB2A2EB11600484CEC /* ImagePicker3.swift */,
 				37E32B212A2B6521006F6582 /* Edit.swift */,
 				37E32B232A2B653B006F6582 /* ImagePicker.swift */,
-				37E32B252A2B654E006F6582 /* SearchBar.swift */,
 				37E32B272A2B6567006F6582 /* ProfileHeader.swift */,
 				37E32B292A2B6572006F6582 /* PostCell.swift */,
 				37E32B2B2A2B6582006F6582 /* add post.swift */,
@@ -154,6 +163,12 @@
 				37E32B2F2A2B65A4006F6582 /* See More Details.swift */,
 				378C13E72A2C30D700484CEC /* TabView.swift */,
 				37E32B312A2B65B2006F6582 /* button camera.swift */,
+				43C2A42D2A2FC1F700D4B05A /* SearchPage.swift */,
+				43C2A42F2A2FC2CE00D4B05A /* SearchBar.swift */,
+				43C2A4312A2FC32E00D4B05A /* Splash.swift */,
+				43C2A4332A2FC35700D4B05A /* Onboarding2.swift */,
+				43C2A4352A2FC37600D4B05A /* StartButtonView.swift */,
+				43C2A4372A2FC39700D4B05A /* Test.swift */,
 				37E32B1B2A2B64BB006F6582 /* ViewModel */,
 			);
 			path = View;
@@ -243,7 +258,6 @@
 			files = (
 				37E32B362A2B65ED006F6582 /* PostViewModel.swift in Sources */,
 				37E32B282A2B6567006F6582 /* ProfileHeader.swift in Sources */,
-				37E32B262A2B654E006F6582 /* SearchBar.swift in Sources */,
 				37E32B2C2A2B6582006F6582 /* add post.swift in Sources */,
 				37E32B202A2B6513006F6582 /* Sign in.swift in Sources */,
 				378C13EC2A2EB11600484CEC /* ImagePicker3.swift in Sources */,
@@ -251,12 +265,18 @@
 				37E32B342A2B65D7006F6582 /* Post.swift in Sources */,
 				37E32B0F2A2B61ED006F6582 /* ContentView.swift in Sources */,
 				37E32B2A2A2B6572006F6582 /* PostCell.swift in Sources */,
+				43C2A4342A2FC35700D4B05A /* Onboarding2.swift in Sources */,
 				37E32B302A2B65A4006F6582 /* See More Details.swift in Sources */,
 				378C13E82A2C30D700484CEC /* TabView.swift in Sources */,
+				43C2A42E2A2FC1F700D4B05A /* SearchPage.swift in Sources */,
 				DC1E18402A2B8158001BECE5 /* HomePage.swift in Sources */,
 				DC0C109E2A2CB777003563D3 /* Favorite.swift in Sources */,
+				43C2A4382A2FC39700D4B05A /* Test.swift in Sources */,
+				43C2A4322A2FC32E00D4B05A /* Splash.swift in Sources */,
 				37E32B2E2A2B658C006F6582 /* share.swift in Sources */,
+				43C2A4302A2FC2CE00D4B05A /* SearchBar.swift in Sources */,
 				37E32B242A2B653B006F6582 /* ImagePicker.swift in Sources */,
+				43C2A4362A2FC37600D4B05A /* StartButtonView.swift in Sources */,
 				37E32B222A2B6521006F6582 /* Edit.swift in Sources */,
 				37E32B0D2A2B61ED006F6582 /* Local_BrandsApp.swift in Sources */,
 			);
@@ -387,7 +407,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Local_Brands/Preview Content\"";
-				DEVELOPMENT_TEAM = B7M43CRZYR;
+				DEVELOPMENT_TEAM = 2LVB7G8J3S;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -416,7 +436,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Local_Brands/Preview Content\"";
-				DEVELOPMENT_TEAM = B7M43CRZYR;
+				DEVELOPMENT_TEAM = 2LVB7G8J3S;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;

@@ -46,7 +46,7 @@ struct Local_Brand: View {
 //
 //                        } label: {
                             
-                            NavigationLink(destination:    SearchBar(text: "")) {
+                            NavigationLink(destination:    SearchPage(text: "")) {
                                 Image(systemName: "magnifyingglass.circle" )
                                     .foregroundColor(.white)
                                     .font(.title)
