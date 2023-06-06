@@ -1,22 +1,14 @@
 //
 //  SearchBar.swift
-//  LocalBrands
+//  Local_Brands
 //
-//  Created by Shifa Alfaisal on 10/11/1444 AH.
-//
-
-
-//
-//  SearchBar.swift
-//  Snapcolor
-//
-//  Created by Shifa Alfaisal on 11/06/1444 AH.
+//  Created by Shifa Alfaisal on 17/11/1444 AH.
 //
 
 import SwiftUI
 
 struct SearchBar: View {
-    @State var text: String
+    @Binding var text: String
     @State private var isEditing = false
     
     
@@ -52,19 +44,13 @@ struct SearchBar: View {
                             }
                             
                         }
-                    ).onTapGesture {
-                        self.isEditing = true
+                     
                     }
-                
-            }
-            Spacer()
-        }
-        .padding()
-        }
+                ).onTapGesture {
+                    self.isEditing = true
+                }
+            
+        }    }
 }
 
-struct SearchBar_Previews: PreviewProvider {
-    static var previews: some View {
-        SearchBar(text: "")
-    }
-}
+
