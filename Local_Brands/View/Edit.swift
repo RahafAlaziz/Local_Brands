@@ -25,7 +25,7 @@ struct ProFileView: View {
             
             VStack{
                 Text("تحرير ملف المتجر الشخصي")
-                    .font(.title)
+                    .font(.title2)
                     .multilineTextAlignment(.center)
                     .padding(.top, -200)
                     .position(x:200,y:220 )

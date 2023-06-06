@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+
 struct Signin: View {
     @State private var showingAlert = false
     @ObservedObject var input = NumbersOnly()
@@ -160,6 +161,7 @@ struct Signin: View {
         }
     }
 }
+
 
     struct SigninView_Previews: PreviewProvider {
         static var previews: some View {
