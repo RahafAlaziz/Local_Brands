@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		378C13E82A2C30D700484CEC /* TabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378C13E72A2C30D700484CEC /* TabView.swift */; };
+		378C13EC2A2EB11600484CEC /* ImagePicker3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378C13EB2A2EB11600484CEC /* ImagePicker3.swift */; };
 		37E32B0D2A2B61ED006F6582 /* Local_BrandsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E32B0C2A2B61ED006F6582 /* Local_BrandsApp.swift */; };
 		37E32B0F2A2B61ED006F6582 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E32B0E2A2B61ED006F6582 /* ContentView.swift */; };
 		37E32B112A2B61EE006F6582 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37E32B102A2B61EE006F6582 /* Assets.xcassets */; };
@@ -37,6 +38,7 @@
 
 /* Begin PBXFileReference section */
 		378C13E72A2C30D700484CEC /* TabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabView.swift; sourceTree = "<group>"; };
+		378C13EB2A2EB11600484CEC /* ImagePicker3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker3.swift; sourceTree = "<group>"; };
 		37E32B092A2B61ED006F6582 /* Local_Brands.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Local_Brands.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		37E32B0C2A2B61ED006F6582 /* Local_BrandsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Local_BrandsApp.swift; sourceTree = "<group>"; };
 		37E32B0E2A2B61ED006F6582 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -104,7 +106,6 @@
 				DC1E183F2A2B8158001BECE5 /* HomePage.swift */,
 				DC0C109D2A2CB777003563D3 /* Favorite.swift */,
 				37E32B1C2A2B64CF006F6582 /* View */,
-				37E32B1B2A2B64BB006F6582 /* ViewModel */,
 				37E32B1A2A2B64AA006F6582 /* Model */,
 				37E32B0C2A2B61ED006F6582 /* Local_BrandsApp.swift */,
 				37E32B102A2B61EE006F6582 /* Assets.xcassets */,
@@ -142,6 +143,7 @@
 			children = (
 				37E32B0E2A2B61ED006F6582 /* ContentView.swift */,
 				37E32B1F2A2B6513006F6582 /* Sign in.swift */,
+				378C13EB2A2EB11600484CEC /* ImagePicker3.swift */,
 				37E32B212A2B6521006F6582 /* Edit.swift */,
 				37E32B232A2B653B006F6582 /* ImagePicker.swift */,
 				37E32B252A2B654E006F6582 /* SearchBar.swift */,
@@ -152,6 +154,7 @@
 				37E32B2F2A2B65A4006F6582 /* See More Details.swift */,
 				378C13E72A2C30D700484CEC /* TabView.swift */,
 				37E32B312A2B65B2006F6582 /* button camera.swift */,
+				37E32B1B2A2B64BB006F6582 /* ViewModel */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -243,6 +246,7 @@
 				37E32B262A2B654E006F6582 /* SearchBar.swift in Sources */,
 				37E32B2C2A2B6582006F6582 /* add post.swift in Sources */,
 				37E32B202A2B6513006F6582 /* Sign in.swift in Sources */,
+				378C13EC2A2EB11600484CEC /* ImagePicker3.swift in Sources */,
 				37E32B322A2B65B2006F6582 /* button camera.swift in Sources */,
 				37E32B342A2B65D7006F6582 /* Post.swift in Sources */,
 				37E32B0F2A2B61ED006F6582 /* ContentView.swift in Sources */,

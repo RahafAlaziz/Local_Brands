@@ -27,9 +27,7 @@ struct shareit : View {
         
         VStack{
             ShareLink(item: link)
-                ShareLink("Learn Swift here", item: link)
                 ShareLink(item: link) {
-                    Label("Learn Swift here", systemImage: "swift")
                 }
             Button(action: {
                 //  adding items to be shared
@@ -40,8 +38,7 @@ struct shareit : View {
                 
             }, label: {
                 
-                Text("share")
-                    .fontWeight(.heavy)
+              
                 
             })
         }

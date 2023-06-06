@@ -19,12 +19,14 @@ struct See_More_Details: View {
                 } label: {
                     
                     VStack{
+                        
                         Image("0")
+                        
                         
                         Text("لمشاهدة التفاصيل")
                             .bold()
                             .foregroundColor(Color.white)
-                            .frame(width: 214.13, height: 39)
+                            .frame(width: 150, height: 39)
                             .background(Color("orange"))
                             .cornerRadius(10)
                     }

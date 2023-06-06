@@ -125,12 +125,9 @@ struct Local_Brand: View {
                                         .font(.title)
                                         .foregroundColor(.white)
                                     
-                                    Text("like")
-                                        .foregroundColor(.white)
                                     
                                 }
                             }
-                            
                             //                        Button(action: {
                             //
                             //                        }){
@@ -148,7 +145,9 @@ struct Local_Brand: View {
                             
                             ShareLink(item: link) {
                                 Label("", systemImage: "arrowshape.turn.up.forward")
-                            }
+                            }   .font(.title)
+                            .foregroundColor(.white)
+
                             
                             Button(action: {
                                 isShowingSheet.toggle()
