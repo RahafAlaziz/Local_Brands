@@ -53,7 +53,7 @@ struct Favorite: View {
                         VStack{
                             Image("p1")
                                 .resizable()
-                            //  .aspectRatio(contentMode: .fill)
+                              .aspectRatio(contentMode: .fill)
                                 .frame(width: 180 ,height: 270)
                                 .cornerRadius(20)
                             //    .offset(x: -0 , y: 30)
@@ -68,7 +68,7 @@ struct Favorite: View {
                             
                             Image("p4")
                                 .resizable()
-                            // .aspectRatio(contentMode: .fill)
+                             .aspectRatio(contentMode: .fill)
                                 .frame(width: 180 ,height: 270)
                                 .cornerRadius(20)
                             // .offset(x: -0 , y: 30)
@@ -86,7 +86,7 @@ struct Favorite: View {
                         VStack{
                             Image("p5")
                                 .resizable()
-                            // .aspectRatio(contentMode: .fill)
+                             .aspectRatio(contentMode: .fill)
                                 .frame(width: 180 ,height: 270)
                                 .cornerRadius(20)
                             //    .offset(x: -0 , y: 30)
@@ -103,7 +103,7 @@ struct Favorite: View {
                             
                             Image("p3")
                                 .resizable()
-                            //   .aspectRatio(contentMode: .fill)
+                               .aspectRatio(contentMode: .fill)
                                 .frame(width: 180 ,height: 270)
                                 .cornerRadius(20)
                             //   .offset(x: -0 , y: 30)
@@ -122,7 +122,7 @@ struct Favorite: View {
                             VStack{
                                 Image("p1")
                                     .resizable()
-                                //   .aspectRatio(contentMode: .fill)
+                                   .aspectRatio(contentMode: .fill)
                                     .frame(width: 180 ,height: 270)
                                     .cornerRadius(20)
                                 //  .offset(x: -0 , y: 30)
@@ -137,7 +137,7 @@ struct Favorite: View {
                                 
                                 Image("p5")
                                     .resizable()
-                                //    .aspectRatio(contentMode: .fill)
+                                    .aspectRatio(contentMode: .fill)
                                     .frame(width: 180 ,height: 270)
                                     .cornerRadius(20)
                                 //    .offset(x: -0 , y: 30)
