@@ -14,7 +14,7 @@ struct SearchBar: View {
     
     var body: some View {
         VStack{
-          
+            
             HStack {
                 
                 
@@ -29,7 +29,7 @@ struct SearchBar: View {
                             Image(systemName: "magnifyingglass")
                                 .foregroundColor(.gray)
                                 .frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)
-//
+                            //
                                 .padding(.leading, 5)
                             
                             
@@ -44,13 +44,12 @@ struct SearchBar: View {
                             }
                             
                         }
-                     
+                        
+                    ).onTapGesture {
+                        self.isEditing = true
                     }
-                ).onTapGesture {
-                    self.isEditing = true
-                }
-            
-        }    }
+                
+            }    }
+    }
+    
 }
-
-

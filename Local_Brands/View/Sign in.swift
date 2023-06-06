@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-
 struct Signin: View {
     @State private var showingAlert = false
     @ObservedObject var input = NumbersOnly()
@@ -162,10 +161,51 @@ struct Signin: View {
     }
 }
 
-
     struct SigninView_Previews: PreviewProvider {
         static var previews: some View {
             Signin()
         }
     }
 
+
+
+//
+////
+////  button.swift
+////  test image picker
+////
+////  Created by lujain mohammed on 18/11/1444 AH.
+////
+//
+//import SwiftUI
+//
+//struct ProfileView: View {
+//    @Binding var toggleFullScreen:Bool
+//    var body: some View {
+//        VStack(alignment: .center, spacing: 10, content:{
+//            Text("")
+//            Button("close") {
+//                toggleFullScreen.toggle()
+//            }
+//        })
+//    }
+//}
+//
+//
+//struct button: View {
+//    @State var isFullScreenCoverOpen:Bool = false
+//    var body: some View {
+//        Button("Open profile") {
+//            isFullScreenCoverOpen.toggle()
+//        }.fullScreenCover(isPresented: $isFullScreenCoverOpen, content:{
+//            ProfileView(toggleFullScreen: $isFullScreenCoverOpen)
+//        })
+//        
+//    }
+//}
+//
+//struct button_Previews: PreviewProvider {
+//    static var previews: some View {
+//        button()
+//    }
+//}
