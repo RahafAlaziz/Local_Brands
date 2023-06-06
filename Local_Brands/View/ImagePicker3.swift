@@ -8,7 +8,7 @@
 import PhotosUI
 import SwiftUI
 
-struct ImagePicker: View {
+struct ImagePicker3: View {
     @State var selectedItems: [PhotosPickerItem] = []
     @State var data: Data?
     
