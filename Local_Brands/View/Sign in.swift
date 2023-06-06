@@ -20,13 +20,25 @@ struct Signin: View {
         NavigationView {
             
             ZStack {
+                
                 Rectangle()
                     .foregroundColor(Color("offwhite"))
                     .ignoresSafeArea()
-                
+                Button {
+                } label: {
+                    Image(systemName: "xmark").padding(.bottom, 830).padding(.leading, 320)
+                        .font(.title2)
+                        .foregroundColor(Color("orange"))
+
+                }
+
+               
+            
                 VStack {
+                    
+                    
                     Text("التسجيل كصاحب المتجر")
-                        .font(.title)
+                        .font(.title2)
                         .multilineTextAlignment(.center)
                         .padding(.top, -200)
                         .position(x:200,y:220 )

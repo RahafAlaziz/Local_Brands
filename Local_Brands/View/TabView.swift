@@ -10,13 +10,27 @@ import SwiftUI
 struct TabView1: View {
     var body: some View {
         TabView {
-            Image("1")
-            Image("2")
-            Image("3")
-            Image("4")
-              
+                Image("1")
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .padding(40)
+                Image("2")
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .padding(40)
+
+                Image("3")
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .padding(40)
+
+                Image("4")
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .padding(40)
+
+            
         }
-        
         .tabViewStyle(.page)
 //        .indexViewStyle(.page(backgroundDisplayMode: .always))
     }

@@ -8,7 +8,7 @@
 import SwiftUI
 import AVKit
 
-struct Local_Brand: View {
+struct HomePage: View {
     let link = URL(string: "https://www.hackingwithswift.com")!
 
     @State var isShowingSheet: Bool = false
@@ -236,8 +236,8 @@ struct Local_Brand: View {
             }
             
             .background(Color.black.edgesIgnoringSafeArea(.all))
-            .edgesIgnoringSafeArea(.all)
-            
+//            .edgesIgnoringSafeArea(.all)
+            .ignoresSafeArea(.all)
         } .sheet(isPresented: $isShowingSheet){
             share()
               
@@ -325,7 +325,7 @@ struct Local_Brand: View {
         }
     }
     
-    class Host : UIHostingController<Local_Brand>{
+    class Host : UIHostingController<HomePage>{
         
         override var preferredStatusBarStyle: UIStatusBarStyle {
             
@@ -430,7 +430,7 @@ struct Local_Brand: View {
     
     struct HomePage_Previews: PreviewProvider {
         static var previews: some View {
-            Local_Brand()
+            HomePage()
         }
     }
 }

@@ -21,7 +21,10 @@ struct See_More_Details: View {
                     VStack{
                         
                         Image("0")
-                        
+                            .resizable()
+                            .frame(width: 71 , height: 54)
+                            .aspectRatio(contentMode: .fit)
+                            .padding()
                         
                         Text("لمشاهدة التفاصيل")
                             .bold()

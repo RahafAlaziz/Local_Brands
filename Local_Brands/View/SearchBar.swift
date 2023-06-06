@@ -26,18 +26,19 @@ struct SearchBar: View {
             HStack {
                 
                 
-                TextField("ابحث عن منتج، ماركة أو فئة", text: $text)
+                TextField("ابحث عن منتج، ماركة", text: $text)
                     .padding(15)
                     .padding(.leading, 25)
                     .background(Color(.systemGray6))
                     .foregroundColor(.black)
-                    .cornerRadius(35)
+                    .cornerRadius(10)
                     .overlay(
                         HStack {
                             Image(systemName: "magnifyingglass")
                                 .foregroundColor(.gray)
                                 .frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)
-                                .padding(.leading, 15)
+//
+                                .padding(.leading, 5)
                             
                             
                             if isEditing {
