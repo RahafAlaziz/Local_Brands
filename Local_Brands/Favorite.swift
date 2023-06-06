@@ -36,9 +36,12 @@ struct Favorite: View {
                             
                         }){
                             
-                            NavigationLink(destination: Local_Brand()) {
+                            NavigationLink(destination: Local_Brand()
+                                .navigationBarBackButtonHidden(true)
+                            ) {
                                 Text ("For You")}
                             .foregroundColor(self.top == 1 ? .black : Color.black.opacity(0.45 ))
+                            .navigationBarBackButtonHidden(true)
                             
                             //                            Text("For You")
                             //                                .foregroundColor(self.top == 1 ? .black : Color.black.opacity(0.45 ))
