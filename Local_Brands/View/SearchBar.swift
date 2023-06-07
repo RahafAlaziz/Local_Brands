@@ -19,7 +19,7 @@ struct SearchBar: View {
                 
                 
                 TextField("ابحث عن منتج، ماركة", text: $text)
-                    .padding(15)
+                    .padding(10)
                     .padding(.leading, 25)
                     .background(Color(.systemGray6))
                     .foregroundColor(.black)
@@ -53,3 +53,4 @@ struct SearchBar: View {
     }
     
 }
+

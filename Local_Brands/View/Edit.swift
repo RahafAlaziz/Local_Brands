@@ -18,20 +18,9 @@ struct ProFileView: View {
     @State private var NO = ""
     
     var body: some View {
-        ZStack {
-            Rectangle()
-                .foregroundColor(Color("offwhite"))
-                .ignoresSafeArea()
-            
+        ZStack {Color("offwhite")
             VStack{
-                Text("تحرير ملف المتجر الشخصي")
-                    .font(.title2)
-                    .multilineTextAlignment(.center)
-                    .padding(.top, -200)
-                    .position(x:200,y:220 )
-                    .foregroundColor(.black)
-                
-                ZStack(alignment: .bottomTrailing){
+                ZStack(alignment: .topTrailing){
                     Button(action: {
                         changeProFileImage = true
                         openCameraRoll = true
@@ -99,8 +88,8 @@ struct ProFileView: View {
                     
                     TextField("نبذه مختصره عن المتجر", text: $ProFileView)
                         .multilineTextAlignment(.trailing)
-                        .padding(.trailing,2)
-                        .padding(.top,-50)
+                        .padding(.trailing,1.0)
+                        .padding(.bottom, 77.0)
                         .frame(height: 100)
                         .padding(7)
                         .background(.white)
@@ -129,7 +118,12 @@ struct ProFileView: View {
                     
                 ) }
             .scrollContentBackground(.hidden)
-        }
+            
+        }   .navigationBarTitle("تحرير ملف المتجر الشخصي", displayMode: .inline)
+        .ignoresSafeArea(.all)
+        .scrollContentBackground(.hidden)
+
+        
         
     }
 }

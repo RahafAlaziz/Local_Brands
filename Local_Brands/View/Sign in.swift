@@ -118,7 +118,6 @@ struct Signin: View {
 //                .edgesIgnoringSafeArea(.all)
                 .ignoresSafeArea(.all)
                 .navigationBarTitle("  التسجيل كصاحب متجر ", displayMode: .inline)
-                
                     .scrollContentBackground(.hidden)
 //                    .border(.red)
 
