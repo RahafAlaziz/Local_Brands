@@ -13,21 +13,21 @@ struct TabView1: View {
                 Image("1")
                 .resizable()
                 .aspectRatio(contentMode: .fit)
-                .padding(40)
+                .padding(20)
                 Image("2")
                 .resizable()
                 .aspectRatio(contentMode: .fit)
-                .padding(40)
+                .padding(20)
 
                 Image("3")
                 .resizable()
                 .aspectRatio(contentMode: .fit)
-                .padding(40)
+                .padding(20)
 
                 Image("4")
                 .resizable()
                 .aspectRatio(contentMode: .fit)
-                .padding(40)
+                .padding(20)
 
             
         }

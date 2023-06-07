@@ -18,110 +18,84 @@ struct Signin: View {
     
     var body: some View {
         NavigationView {
-            
-            ZStack {
-                
-                Rectangle()
-                    .foregroundColor(Color("offwhite"))
-                    .ignoresSafeArea()
-                Button {
-                } label: {
-                    Image(systemName: "xmark").padding(.bottom, 830).padding(.leading, 320)
-                        .font(.title2)
-                        .foregroundColor(Color("orange"))
-
-                }
-
-               
-            
+            ZStack { Color("offwhite")
                 VStack {
                     
                     
-                    Text("التسجيل كصاحب المتجر")
-                        .font(.title2)
-                        .multilineTextAlignment(.center)
-                        .padding(.top, -200)
-                        .position(x:200,y:220 )
-                    // .bold()
-                        .foregroundColor(.black)
+                    TextField("رقم الجوال",text: $input.value)
+                        .multilineTextAlignment(.trailing)
+                        .padding(.trailing,2)
+                        .padding(7)
+                        .background(.white)
+                        .overlay {
+                            RoundedRectangle(cornerRadius: 5)
+                                .stroke(.white, lineWidth: 4)
+                        }
+                        .padding(.horizontal)
+                        .padding(2)
+                    
+                    TextField("البريد الالكتروني", text: $ProFileView)
+                        .multilineTextAlignment(.trailing)
+                        .padding(.trailing,2)
+                        .padding(7)
+                        .background(.white)
+                        .overlay {
+                            RoundedRectangle(cornerRadius: 5)
+                                .stroke(.white, lineWidth: 4)
+                        }
+                        .padding(.horizontal)
+                        .padding(2)
+                    
+                    TextField("اسم المستخدم", text: $Pass)
+                        .multilineTextAlignment(.trailing)
+                        .padding(.trailing,2)
+                        .padding(7)
+                        .background(.white)
+                        .overlay {
+                            RoundedRectangle(cornerRadius: 5)
+                                .stroke(.white, lineWidth: 4)
+                        }
+                        .padding(.horizontal)
+                        .padding(2)
+                    
+                    TextField("رقم السجل التجاري  ",text:$NO)
+                        .multilineTextAlignment(.trailing)
+                        .padding(.trailing,2)
+                        .padding(7)
+                        .background(.white)
+                        .overlay {
+                            RoundedRectangle(cornerRadius: 5)
+                                .stroke(.white, lineWidth: 4)
+                        }
+                        .padding(.horizontal)
+                        .padding(2)
+                    
+                    TextField("كلمة المرور", text: $Ne)
+                        .multilineTextAlignment(.trailing)
+                        .padding(.trailing,2)
+                        .padding(7)
+                        .background(.white)
+                        .overlay {
+                            RoundedRectangle(cornerRadius: 5)
+                                .stroke(.white, lineWidth: 4)
+                        }
+                        .padding(.horizontal)
+                        .padding(2)
                     
                     
-                    VStack{
-                       
-                        TextField("رقم الجوال",text: $input.value)
-                            .multilineTextAlignment(.trailing)
-                            .padding(.trailing,2)
-                            .padding(7)
-                            .background(.white)
-                            .overlay {
-                                RoundedRectangle(cornerRadius: 5)
-                                    .stroke(.white, lineWidth: 4)
-                            }
-                            .padding(.horizontal)
-                            .padding(2)
-                        
-                        TextField("البريد الالكتروني", text: $ProFileView)
-                            .multilineTextAlignment(.trailing)
-                            .padding(.trailing,2)
-                            .padding(7)
-                            .background(.white)
-                            .overlay {
-                                RoundedRectangle(cornerRadius: 5)
-                                    .stroke(.white, lineWidth: 4)
-                            }
-                            .padding(.horizontal)
-                            .padding(2)
-                        
-                        TextField("اسم المستخدم", text: $Pass)
-                            .multilineTextAlignment(.trailing)
-                            .padding(.trailing,2)
-                            .padding(7)
-                            .background(.white)
-                            .overlay {
-                                RoundedRectangle(cornerRadius: 5)
-                                    .stroke(.white, lineWidth: 4)
-                            }
-                            .padding(.horizontal)
-                            .padding(2)
-                        
-                        TextField("رقم السجل التجاري  ",text:$NO)
-                            .multilineTextAlignment(.trailing)
-                            .padding(.trailing,2)
-                            .padding(7)
-                            .background(.white)
-                            .overlay {
-                                RoundedRectangle(cornerRadius: 5)
-                                    .stroke(.white, lineWidth: 4)
-                            }
-                            .padding(.horizontal)
-                            .padding(2)
-                        
-                        TextField("كلمة المرور", text: $Ne)
-                            .multilineTextAlignment(.trailing)
-                            .padding(.trailing,2)
-                            .padding(7)
-                            .background(.white)
-                            .overlay {
-                                RoundedRectangle(cornerRadius: 5)
-                                    .stroke(.white, lineWidth: 4)
-                            }
-                            .padding(.horizontal)
-                            .padding(2)
-                        
-                        
-                        TextField("تاكيد كلمة المرور", text: $User)
-                            .multilineTextAlignment(.trailing)
-                            .padding(.trailing,2)
-                            .padding(7)
-                            .background(.white)
-                            .overlay {
-                                RoundedRectangle(cornerRadius: 5)
-                                    .stroke(.white, lineWidth:4)
-                            }
-                            .padding(.horizontal)
-                            .padding(2)}
-                  
-                    .padding(.top,-520)
+                    TextField("تاكيد كلمة المرور", text: $User)
+                        .multilineTextAlignment(.trailing)
+                        .padding(.trailing,2)
+                        .padding(7)
+                        .background(.white)
+                        .overlay {
+                            RoundedRectangle(cornerRadius: 5)
+                                .stroke(.white, lineWidth:4)
+                        }
+                        .padding(.horizontal)
+                        .padding(2)
+                    
+                    //                    .padding(.top,-520)
                     
                     //   NavigationLink(destination: ProFileView()){
                     //         Text("نسيت كلمة المرور ؟")}
@@ -138,12 +112,18 @@ struct Signin: View {
                     
                 }
                 
+                
             }
+//                }  .background(Color("offwhite"))
+//                .edgesIgnoringSafeArea(.all)
+                .ignoresSafeArea(.all)
+                .navigationBarTitle("  التسجيل كصاحب متجر ", displayMode: .inline)
+                
+                    .scrollContentBackground(.hidden)
+//                    .border(.red)
+
             
-            //   )}
-            .scrollContentBackground(.hidden)
         }
-        
     }
     
     class NumbersOnly: ObservableObject{
@@ -200,7 +180,7 @@ struct Signin: View {
 //        }.fullScreenCover(isPresented: $isFullScreenCoverOpen, content:{
 //            ProfileView(toggleFullScreen: $isFullScreenCoverOpen)
 //        })
-//        
+//
 //    }
 //}
 //

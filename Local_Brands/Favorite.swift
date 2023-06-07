@@ -39,11 +39,13 @@ struct Favorite: View {
                            
                             NavigationLink(destination: HomePage()
                                                           .navigationBarBackButtonHidden(true)
+                                           
                                                       ) {
                                 Text ("For You")}
                             .foregroundColor(self.top == 1 ? .black : Color.black.opacity(0.45 ))
                             .navigationBarBackButtonHidden(true)
-                            .navigationBarBackButtonHidden(true)
+                            .navigationBarBackButtonHidden(false)
+
                             
                             //                            Text("For You")
                             //                                .foregroundColor(self.top == 1 ? .black : Color.black.opacity(0.45 ))

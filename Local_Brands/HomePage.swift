@@ -14,6 +14,7 @@ struct HomePage: View {
     @State var isShowingSheet: Bool = false
     @State var isShowingFullScreen: Bool = false
     @State var isShowingFullScreen1: Bool = false
+    @State private var isLiked = false
 
 
     @State var index = 0
@@ -110,24 +111,32 @@ struct HomePage: View {
                                 
                             }) {
                                 
-                                Image("profilepic")
+                                Image("0")
                                     .renderingMode(.original)
                                     .resizable()
-                                    .frame(width: 55,height: 55)
+                                    .frame(width: 45,height:45)
                                     .clipShape(Circle())
                             }
-                            Button(action: {
-                                
-                            }){
-                                VStack(spacing : 8){
-                                    
-                                    Image(systemName: "suit.heart")
-                                        .font(.title)
-                                        .foregroundColor(.white)
-                                    
-                                    
+                            Button {
+                                self.isLiked.toggle()
+                            } label: {
+                                ZStack{
+                                    image(Image(systemName: "heart.fill"), show: isLiked)
+                                    image(Image(systemName: "heart"), show: !isLiked)
                                 }
                             }
+//                            Button(action: {
+//
+//                            }){
+//                                VStack(spacing : 8){
+//
+//                                    Image(systemName: "suit.heart")
+//                                        .font(.title)
+//                                        .foregroundColor(.white)
+//
+//
+//                                }
+//                            }
                             //                        Button(action: {
                             //
                             //                        }){
@@ -240,6 +249,7 @@ struct HomePage: View {
             .ignoresSafeArea(.all)
         } .sheet(isPresented: $isShowingSheet){
             share()
+            
               
                   
         }.fullScreenCover(isPresented: $isShowingFullScreen1) {
@@ -426,6 +436,14 @@ struct HomePage: View {
         }
         
     }
+    func image(_ image: Image, show: Bool) -> some View { image
+        .tint(isLiked ? .red : .white)
+        .font(.system(size:30))
+        .scaleEffect(show ? 1 : 0)
+        .opacity(show ? 1 : 0)
+        .animation(.interpolatingSpring(stiffness: 170, damping: 15), value: show)
+    }
+    }
     
     
     struct HomePage_Previews: PreviewProvider {
@@ -433,4 +451,4 @@ struct HomePage: View {
             HomePage()
         }
     }
-}
+
