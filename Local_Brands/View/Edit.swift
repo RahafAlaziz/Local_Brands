@@ -36,7 +36,7 @@ struct ProFileView: View {
                             
                         } else {
                             
-                            Image("proFileImage")
+                            Image("profilephoto")
                                 .resizable()
                                 .frame(width: 120, height: 120)
                                 .clipShape(Circle())
