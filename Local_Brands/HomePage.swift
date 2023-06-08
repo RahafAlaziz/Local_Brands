@@ -62,11 +62,13 @@ struct HomePage: View {
                         
                         }){
                             
-                            NavigationLink(destination: Favorite()) {
+                            NavigationLink(destination: Favorite()
+                                .navigationBarBackButtonHidden(true)) {
                                 Text ("Favorite")
                                 
                             }
                             .foregroundColor(self.top == 1 ? .white : Color.white.opacity(0.45 ))
+                            .navigationBarBackButtonHidden(true)
                             
                             Button(action: {
                                 
@@ -436,7 +438,6 @@ struct HomePage: View {
                 }
             }
         }
-        
     }
     func image(_ image: Image, show: Bool) -> some View { image
         .tint(isLiked ? .red : .white)

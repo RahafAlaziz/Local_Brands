@@ -13,12 +13,12 @@ struct Onboarding2 : View {
     @State var toContentView = false
     
     var body: some View {
-            
+        NavigationView{
             TabView(selection: $currentTab,
                     
                     content:  {
+                
                 ZStack{
-                    
                     Image("on-boarding-9")
                         .resizable()
                         .scaledToFill()
@@ -28,7 +28,7 @@ struct Onboarding2 : View {
                         .opacity(0.0)
                     
                     VStack(){
-                      
+                        
                         Text("منصة تجمع أبرز الكفاءات المبدعة في التصميم والفن بالمملكة")
                             .font(.title2)
                             .foregroundColor(Color(red: 0.3, green: 0.33, blue: 0.133))
@@ -39,11 +39,26 @@ struct Onboarding2 : View {
                             .environment(\.locale, Locale(identifier: "ar"))
                             .environment(\.layoutDirection, .rightToLeft)
                     }
-                    HStack{
-                        Test()
-
-                    }
+                    VStack(alignment: .trailing){
+                        Spacer()
+                        HStack{
+                            Spacer()
+                            NavigationLink(destination: HomePage().navigationBarHidden(true)
+                                           , label: {
+                                
+                                
+                                Text("تخطي")
+                                    .foregroundColor(Color(red: 0.174, green: 0.189, blue: 0.059))
+                                
+                                
+                            })
+                            
+                        }
+                    }.padding(50)
+                    
                 }.tag(0)
+                
+                
                 ZStack {
                     
                     Image("on-boarding-8")
@@ -92,10 +107,13 @@ struct Onboarding2 : View {
                     StartButtonView()
                         .padding(.top, 650.0)
                 }.tag(2)
-            }).tabViewStyle(PageTabViewStyle())
+                
+            })
+            .tabViewStyle(PageTabViewStyle())
                 .indexViewStyle(PageIndexViewStyle(backgroundDisplayMode: .always))
                 .ignoresSafeArea()
-            
+                .padding(-3)
+        }
             //.navigationBarHidden(true)
             
             

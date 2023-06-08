@@ -33,13 +33,18 @@ struct Test: View {
             VStack {
                 HStack{
                     Spacer()
-                    Button(action: {
-                        self.currentStep = onBordingsteps.count - 1
-                    }){
-                        Text("تخطي")
-//                            .padding(16)
+//                    Button(action: {
+//                        self.currentStep = onBordingsteps.count - 1
+//                    }){
+                    NavigationLink(
+                        destination: HomePage().navigationBarHidden(true),
+                        label: {
+                            Text("تخطي")
+                        })
+                        //                            .padding(16)
                             .foregroundColor(Color(red: 0.174, green: 0.189, blue: 0.059))
-                        
+                    
+
                     }
                 }
                 
@@ -49,7 +54,7 @@ struct Test: View {
 
                 .buttonStyle(PlainButtonStyle())
             }}}
-}
+
     struct Test_Previews: PreviewProvider {
         
         static var previews: some View {

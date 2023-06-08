@@ -43,14 +43,14 @@ struct add_post: View {
                         .padding(.horizontal)
                         .padding(10)
                         .background(Color("gray."))
-                        .frame(width: 105 , height: 35)
+                        .frame(width: 100 , height: 35)
                         .cornerRadius(10)
                         .overlay(
                         RoundedRectangle(cornerRadius: 10.0)
                         .stroke(lineWidth: 0.20)
                             
                         )
-                        .padding(.trailing)
+                        .padding(.leading,5)
 Spacer()
                     Text("سعر المنتج")
                         .padding(.horizontal)
