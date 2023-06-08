@@ -43,7 +43,7 @@ struct Onboarding2 : View {
                         Spacer()
                         HStack{
                             Spacer()
-                            NavigationLink(destination: Local_Brand().navigationBarHidden(true)
+                            NavigationLink(destination: HomePage().navigationBarHidden(true)
                                            , label: {
                                 
                                 

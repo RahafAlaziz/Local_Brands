@@ -37,7 +37,7 @@ struct Test: View {
 //                        self.currentStep = onBordingsteps.count - 1
 //                    }){
                     NavigationLink(
-                        destination: Local_Brand().navigationBarHidden(true),
+                        destination: HomePage().navigationBarHidden(true),
                         label: {
                             Text("تخطي")
                         })

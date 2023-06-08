@@ -29,7 +29,7 @@ struct StartButtonView: View {
 //        }
 
         NavigationLink {
-            Local_Brand()
+            HomePage()
                 .navigationBarHidden(true)
         }
         
