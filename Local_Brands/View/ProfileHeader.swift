@@ -17,10 +17,11 @@ struct ProfileHeader: View {
         NavigationView{
             ZStack {
                 VStack{
-                    
+                   
+
                     Divider()
-                    VStack{
-                        Spacer()
+                    
+                    VStack(alignment: .center){
                         
                         Image("0")
                             .resizable()
@@ -29,12 +30,13 @@ struct ProfileHeader: View {
                             .clipShape(Circle())
                             .clipped()
                             .overlay(Circle().stroke(Color.white, lineWidth: 4))
-                            .padding(.horizontal, 700)
                         
                         Text("مزرود متجر ملابس، يشحن لجميع دول العالم،                                                            بإمكانك التسوق أون لاين عن طريق موقعنا الالكتروني")
                             .font(.system(size: 14))
                             .foregroundColor(Color("gray"))
+                            .multilineTextAlignment(.center)
                             .padding(2)
+                        
                         HStack{
                             Image(systemName: "globe")
                                 .font(.system(size: 18))
@@ -42,7 +44,6 @@ struct ProfileHeader: View {
                             
                             
                             
-                            //                                PostCell()
                             Link("mazrood", destination: URL(string: "www.mazrood.com")!)                            }
                         
                         
@@ -54,58 +55,7 @@ struct ProfileHeader: View {
                     
                 }
                 .sheet(isPresented: $isShowingSheet ){
-                    //     ImagePicker(selectedImage: UIImage())
-                    
-                    
                 }
-                //            }                    .toolbar {
-                //                ToolbarItemGroup(placement:
-                //                        .navigationBarLeading) {
-                //                            
-                //                            
-                //                            Button(action: {
-                //                                isShowingSheet = true
-                //                            }, label: {
-                //                                Image(systemName: "plus.app")
-                //                                    .font(.system(size: 18))
-                //                                    .foregroundColor(Color("orange"))
-                //                            })
-                //                        }
-                //                //                Button("dissmis") {
-                //                //                   dismiss()
-                //                
-                //                //
-                //                
-                //                //
-                //                ToolbarItemGroup(placement:
-                //                        .navigationBarLeading) {
-                //                            Button(action: {
-                //                                
-                //                            }, label: {
-                //                                
-                //                                NavigationLink(destination: ProFileView()
-                //                                    .navigationBarBackButtonHidden(true)){
-                //                                        Text("")
-                //                                        Image(systemName: "pencil.circle")
-                //                                            .font(.system(size: 18))
-                //                                        .foregroundColor(Color("orange"))}
-                //                            })
-                //                        }
-                //                
-                //                ToolbarItem(placement:
-                //                        .navigationBarTrailing) {
-                //                            Button(action: {
-                //                                
-                //                            }, label: {
-                //                                Image(systemName:"chevron.forward")
-                //                                    .font(.system(size: 18))
-                //                                    .foregroundColor(Color("orange"))
-                //                            })
-                //                        }
-                //                
-                //            }
-                //            .navigationTitle("MZROD")
-                //            .navigationBarTitleDisplayMode(.inline)
             }
         }
     }

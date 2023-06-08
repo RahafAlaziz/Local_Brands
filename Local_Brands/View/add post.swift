@@ -50,14 +50,23 @@ struct add_post: View {
                         .stroke(lineWidth: 0.20)
                             
                         )
-                        .padding(.leading,5)
-Spacer()
+                    
+                        .padding(.top)
+                        .padding(.leading,80)
+
+                        Spacer()
                     Text("سعر المنتج")
+                        .multilineTextAlignment(.center)
                         .padding(.horizontal)
 
                 }
-                Text("أضف صورة للمنتج")
-
+                VStack(alignment: .trailing){
+                    
+                    Text("أضف صورة للمنتج")
+                        .multilineTextAlignment(.trailing)
+                    
+                        .padding(.top)
+                }
                 button_camera()
 
                 Divider()
