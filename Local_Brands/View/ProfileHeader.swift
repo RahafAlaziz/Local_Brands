@@ -8,15 +8,17 @@
 import SwiftUI
 
 struct ProfileHeader: View {
+    //    @Environment(\.dismiss) var dismiss
     @State var isShowingSheet: Bool = false
-
+    @State private var showingDetail = false
+    
+    
     var body: some View {
         NavigationView{
             ZStack {
                 VStack{
                     
                     Divider()
-                    Spacer()
                     VStack{
                         Spacer()
                         
@@ -39,9 +41,9 @@ struct ProfileHeader: View {
                                 .foregroundColor(Color("orange"))
                             
                             
-
-                                //PostCell()
-                                Link("mazrood", destination: URL(string: "www.mazrood.com")!)                            }
+                            
+                            //                                PostCell()
+                            Link("mazrood", destination: URL(string: "www.mazrood.com")!)                            }
                         
                         
                         
@@ -52,7 +54,7 @@ struct ProfileHeader: View {
                     
                 }
                 .sheet(isPresented: $isShowingSheet ){
-                    ImagePicker(selectedImage: UIImage())
+                    //     ImagePicker(selectedImage: UIImage())
                     
                     
                 }
@@ -69,9 +71,11 @@ struct ProfileHeader: View {
                                     .foregroundColor(Color("orange"))
                             })
                         }
+                //                Button("dissmis") {
+                //                   dismiss()
                 
-     //
-            
+                //
+                
                 //
                 ToolbarItemGroup(placement:
                         .navigationBarLeading) {
@@ -94,9 +98,11 @@ struct ProfileHeader: View {
                                     .foregroundColor(Color("orange"))
                             })
                         }
+                
             }
             .navigationTitle("MZROD")
             .navigationBarTitleDisplayMode(.inline)
         }
     }
+    
 }

@@ -10,6 +10,7 @@ import AVKit
 
 struct HomePage: View {
     let link = URL(string: "https://www.hackingwithswift.com")!
+    @State private var showingDetail = false
 
     @State var isShowingSheet: Bool = false
     @State var isShowingFullScreen: Bool = false
@@ -90,7 +91,7 @@ struct HomePage: View {
                         
                         Button {
                             isShowingFullScreen1.toggle()
-
+//                            DismissingView1()
                         } label: {
                             Image(systemName: "person.circle" )
                                 .foregroundColor(.white)
@@ -116,6 +117,7 @@ struct HomePage: View {
                                     .resizable()
                                     .frame(width: 45,height:45)
                                     .clipShape(Circle())
+                                
                             }
                             Button {
                                 self.isLiked.toggle()
@@ -253,7 +255,7 @@ struct HomePage: View {
               
                   
         }.fullScreenCover(isPresented: $isShowingFullScreen1) {
-            Signin()
+            Signin( isShowingFullScreen1: $isShowingFullScreen1)
         }
 //          .fullScreenCover(isPresented: $isShowingFullScreen) {
 //            SearchBar()

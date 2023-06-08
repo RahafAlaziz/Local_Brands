@@ -15,13 +15,24 @@ struct Signin: View {
     @State private var Pass = ""
     @State private var Ne = ""
     @State var showPassword: Bool = false
-    
+    @Binding var isShowingFullScreen1: Bool
+    @Environment(\.dismiss) var dismiss
     var body: some View {
         NavigationView {
             ZStack { Color("offwhite")
                 VStack {
-                    
-                    
+//                    Button(action: {
+//                        
+//                    }, label: {
+//                        Image(systemName:"xmark")
+//                            .font(.system(size: 18))
+//                            .foregroundColor(Color("orange"))
+//                        dismiss()
+//
+//                    })
+                    Button("dissmis") {
+                       dismiss()
+                    }
                     TextField("رقم الجوال",text: $input.value)
                         .multilineTextAlignment(.trailing)
                         .padding(.trailing,2)
@@ -140,11 +151,7 @@ struct Signin: View {
     }
 }
 
-    struct SigninView_Previews: PreviewProvider {
-        static var previews: some View {
-            Signin()
-        }
-    }
+    
 
 
 
