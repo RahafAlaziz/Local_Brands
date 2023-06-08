@@ -82,9 +82,13 @@ struct ProfileHeader: View {
                             Button(action: {
                                 
                             }, label: {
-                                Image(systemName: "pencil.circle")
-                                    .font(.system(size: 18))
-                                    .foregroundColor(Color("orange"))
+                                
+                                NavigationLink(destination: ProFileView()
+                                    .navigationBarBackButtonHidden(true)){
+                                        Text("")
+                                        Image(systemName: "pencil.circle")
+                                            .font(.system(size: 18))
+                                        .foregroundColor(Color("orange"))}
                             })
                         }
                 
@@ -105,4 +109,10 @@ struct ProfileHeader: View {
         }
     }
     
+}
+
+struct ProfileHeader_Previews: PreviewProvider {
+    static var previews: some View {
+        ProfileHeader()
+    }
 }
