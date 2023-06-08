@@ -23,10 +23,16 @@ struct Favorite: View {
                             
                         }){
                             
-                            Text("Favorite")
-                                .foregroundColor(self.top == 0 ? .black : Color.black.opacity(0.45 ))
-                                .fontWeight(self.top == 0 ? .bold : .none)
-                                .padding(.vertical)
+                            
+                            NavigationLink(destination: HomePage()
+                                                          .navigationBarBackButtonHidden(true)
+                                           
+                                                      ) {
+                                Text ("لك")}
+                            .foregroundColor(self.top == 1 ? .black : Color.black.opacity(0.45 ))
+                            .navigationBarBackButtonHidden(true)
+                            .navigationBarBackButtonHidden(false)
+                           
                             
                         }
                         
@@ -37,14 +43,10 @@ struct Favorite: View {
                         }){
                             
                            
-                            NavigationLink(destination: HomePage()
-                                                          .navigationBarBackButtonHidden(true)
-                                           
-                                                      ) {
-                                Text ("For You")}
-                            .foregroundColor(self.top == 1 ? .black : Color.black.opacity(0.45 ))
-                            .navigationBarBackButtonHidden(true)
-                            .navigationBarBackButtonHidden(false)
+                            Text("مفضلتك")
+                                .foregroundColor(self.top == 0 ? .black : Color.black.opacity(0.45 ))
+                                .fontWeight(self.top == 0 ? .bold : .none)
+                                .padding(.vertical)
 
                             
                             //                            Text("For You")

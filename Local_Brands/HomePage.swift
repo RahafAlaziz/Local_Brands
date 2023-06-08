@@ -64,7 +64,7 @@ struct HomePage: View {
                             
                             NavigationLink(destination: Favorite()
                                 .navigationBarBackButtonHidden(true)) {
-                                Text ("Favorite")
+                                Text ("مفضلتك")
                                 
                             }
                             .foregroundColor(self.top == 1 ? .white : Color.white.opacity(0.45 ))
@@ -76,10 +76,15 @@ struct HomePage: View {
                                 
                             }){
                                 
-                                Text("For You")
-                                    .foregroundColor(self.top == 0 ? .white : Color.white.opacity(0.45 ))
-                                    .fontWeight(self.top == 0 ? .bold : .none)
-                                    .padding(.vertical)
+                                
+                                NavigationLink(destination: Favorite()
+                                    .navigationBarBackButtonHidden(true)) {
+                                    Text ("مفضلتك")
+                                    
+                                }
+                                .foregroundColor(self.top == 1 ? .white : Color.white.opacity(0.45 ))
+                                .navigationBarBackButtonHidden(true)
+                                
                                 
                                 
                             }
@@ -113,13 +118,16 @@ struct HomePage: View {
                             Button(action: {
                                 
                             }) {
-                                
-                                Image("0")
-                                    .renderingMode(.original)
-                                    .resizable()
-                                    .frame(width: 45,height:45)
-                                    .clipShape(Circle())
-                                
+                                NavigationLink(destination: ContentView()
+                                    .navigationBarBackButtonHidden(true)){
+                                    Text("")
+                                    
+                                    
+                                    Image("0")
+                                        .renderingMode(.original)
+                                        .resizable()
+                                        .frame(width: 45,height:45)
+                                    .clipShape(Circle())}
                             }
                             Button {
                                 self.isLiked.toggle()
@@ -251,7 +259,8 @@ struct HomePage: View {
             .background(Color.black.edgesIgnoringSafeArea(.all))
 //            .edgesIgnoringSafeArea(.all)
             .ignoresSafeArea(.all)
-        } .sheet(isPresented: $isShowingSheet){
+        }
+        .sheet(isPresented: $isShowingSheet){
             share()
             
               
