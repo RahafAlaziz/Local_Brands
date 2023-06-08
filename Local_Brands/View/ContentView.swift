@@ -3,6 +3,8 @@ import ASCollectionView
 
 struct ContentView: View {
     @ObservedObject var viewModel = PostViewModel()
+    @State var isShowingSheet: Bool = false
+
 
     
     
@@ -20,6 +22,54 @@ struct ContentView: View {
                 .edgesIgnoringSafeArea(.all)
                 .shadow(color: .white, radius: 24, x: 0, y: 0)
             }
+            .toolbar {
+                ToolbarItemGroup(placement:
+                        .navigationBarLeading) {
+                            
+                            
+                            Button(action: {
+                                isShowingSheet = true
+                            }, label: {
+                                Image(systemName: "plus.app")
+                                    .font(.system(size: 18))
+                                    .foregroundColor(Color("orange"))
+                            })
+                        }
+                //                Button("dissmis") {
+                //                   dismiss()
+                
+                //
+                
+                //
+                ToolbarItemGroup(placement:
+                        .navigationBarLeading) {
+                            Button(action: {
+                                
+                            }, label: {
+                                
+                                NavigationLink(destination: ProFileView()
+                                    .navigationBarBackButtonHidden(true)){
+                                        Text("")
+                                        Image(systemName: "pencil.circle")
+                                            .font(.system(size: 18))
+                                        .foregroundColor(Color("orange"))}
+                            })
+                        }
+                
+                ToolbarItem(placement:
+                        .navigationBarTrailing) {
+                            Button(action: {
+                                
+                            }, label: {
+                                Image(systemName:"chevron.forward")
+                                    .font(.system(size: 18))
+                                    .foregroundColor(Color("orange"))
+                            })
+                        }
+                
+            }
+            .navigationTitle("MZROD")
+            .navigationBarTitleDisplayMode(.inline)
         }
     }
                     var layout: ASCollectionLayout<Int> {
