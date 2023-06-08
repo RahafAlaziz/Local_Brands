@@ -9,6 +9,7 @@ import SwiftUI
 import AVKit
 
 struct HomePage: View {
+    
     let link = URL(string: "https://www.hackingwithswift.com")!
     @State private var showingDetail = false
 
@@ -22,12 +23,15 @@ struct HomePage: View {
     @State var top = 0
     @State var date = [
         
-        Video(id: 0, player: AVPlayer (url: URL(fileURLWithPath: Bundle.main.path(forResource: "Video2", ofType: ".mp4")!)), replay: false),
-        Video(id: 1, player: AVPlayer (url: URL(fileURLWithPath: Bundle.main.path(forResource: "Video1", ofType: ".mp4")!)), replay: false),
-        Video(id: 2, player: AVPlayer (url: URL(fileURLWithPath: Bundle.main.path(forResource: "Video3", ofType: ".mp4")!)), replay: false),
-        Video(id: 3, player: AVPlayer (url: URL(fileURLWithPath: Bundle.main.path(forResource: "Video4", ofType: ".mp4")!)), replay: false),
-        Video(id: 4, player: AVPlayer (url: URL(fileURLWithPath: Bundle.main.path(forResource: "Video5", ofType: ".mp4")!)), replay: false),
-        Video(id: 5, player: AVPlayer (url: URL(fileURLWithPath: Bundle.main.path(forResource: "Video6", ofType: ".mp4")!)), replay: false),
+        Video(id: 0, player: AVPlayer (url: URL(fileURLWithPath: Bundle.main.path(forResource: "Video9", ofType: ".MP4")!)), replay: false),
+        Video(id: 1, player: AVPlayer (url: URL(fileURLWithPath: Bundle.main.path(forResource: "Video8", ofType: ".MP4")!)), replay: false),
+        Video(id: 2, player: AVPlayer (url: URL(fileURLWithPath: Bundle.main.path(forResource: "Video7", ofType: ".MP4")!)), replay: false),
+//        Video(id: 3, player: AVPlayer (url: URL(fileURLWithPath: Bundle.main.path(forResource: "Video2", ofType: ".mp4")!)), replay: false),
+//        Video(id: 4, player: AVPlayer (url: URL(fileURLWithPath: Bundle.main.path(forResource: "Video1", ofType: ".mp4")!)), replay: false),
+//        Video(id: 5, player: AVPlayer (url: URL(fileURLWithPath: Bundle.main.path(forResource: "Video3", ofType: ".mp4")!)), replay: false),
+//        Video(id: 6, player: AVPlayer (url: URL(fileURLWithPath: Bundle.main.path(forResource: "Video4", ofType: ".mp4")!)), replay: false),
+//        Video(id: 7, player: AVPlayer (url: URL(fileURLWithPath: Bundle.main.path(forResource: "Video5", ofType: ".mp4")!)), replay: false),
+//        Video(id: 8, player: AVPlayer (url: URL(fileURLWithPath: Bundle.main.path(forResource: "Video6", ofType: ".mp4")!)), replay: false),
         
     ]
     
@@ -77,13 +81,11 @@ struct HomePage: View {
                             }){
                                 
                                 
-                                NavigationLink(destination: Favorite()
-                                    .navigationBarBackButtonHidden(true)) {
-                                    Text ("مفضلتك")
-                                    
-                                }
-                                .foregroundColor(self.top == 1 ? .white : Color.white.opacity(0.45 ))
-                                .navigationBarBackButtonHidden(true)
+                                Text("لك")
+                                    .foregroundColor(self.top == 0 ? .white : Color.white.opacity(0.45 ))
+                                    .fontWeight(self.top == 0 ? .bold : .none)
+                                    .padding(.vertical)
+
                                 
                                 
                                 
@@ -278,7 +280,7 @@ struct HomePage: View {
         
         var body: some View {
             
-            VStack(spacing : 2.7){
+            VStack(spacing :0){
                 
                 ForEach(0..<self.date.count){i in
                     
@@ -288,7 +290,7 @@ struct HomePage: View {
                         
                         
                             .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
-                            .offset(y: -7)
+                            .offset(y: -12.5)
                         
                         if self.date[i].replay{
                             
