@@ -84,9 +84,6 @@ struct HomePage: View {
                                 }
                                 .foregroundColor(self.top == 1 ? .white : Color.white.opacity(0.45 ))
                                 .navigationBarBackButtonHidden(true)
-                                
-                                
-                                
                             }
                             
                         }
