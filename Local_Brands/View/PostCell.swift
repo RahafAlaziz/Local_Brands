@@ -14,21 +14,7 @@ struct PostCell: View {
     var body: some View {
         ZStack {
             GeometryReader { geometry in
-//                HStack{
-//                    HStack {
-//                        Image("1")
-//                            .resizable()
-//                            .frame(width: 50, height: 50, alignment: .top)
-//                            .cornerRadius(50)
-//                        
-//                        Text("Mazrod")
-//                            .font(.callout)
-//                            .fontWeight(.bold)
-//                        
-//                    }
-//                    Spacer()
-//                }
-                    
+
                 
                         NavigationLink(destination: {
 

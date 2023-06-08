@@ -26,12 +26,7 @@ struct HomePage: View {
         Video(id: 0, player: AVPlayer (url: URL(fileURLWithPath: Bundle.main.path(forResource: "Video9", ofType: ".MP4")!)), replay: false),
         Video(id: 1, player: AVPlayer (url: URL(fileURLWithPath: Bundle.main.path(forResource: "Video8", ofType: ".MP4")!)), replay: false),
         Video(id: 2, player: AVPlayer (url: URL(fileURLWithPath: Bundle.main.path(forResource: "Video7", ofType: ".MP4")!)), replay: false),
-//        Video(id: 3, player: AVPlayer (url: URL(fileURLWithPath: Bundle.main.path(forResource: "Video2", ofType: ".mp4")!)), replay: false),
-//        Video(id: 4, player: AVPlayer (url: URL(fileURLWithPath: Bundle.main.path(forResource: "Video1", ofType: ".mp4")!)), replay: false),
-//        Video(id: 5, player: AVPlayer (url: URL(fileURLWithPath: Bundle.main.path(forResource: "Video3", ofType: ".mp4")!)), replay: false),
-//        Video(id: 6, player: AVPlayer (url: URL(fileURLWithPath: Bundle.main.path(forResource: "Video4", ofType: ".mp4")!)), replay: false),
-//        Video(id: 7, player: AVPlayer (url: URL(fileURLWithPath: Bundle.main.path(forResource: "Video5", ofType: ".mp4")!)), replay: false),
-//        Video(id: 8, player: AVPlayer (url: URL(fileURLWithPath: Bundle.main.path(forResource: "Video6", ofType: ".mp4")!)), replay: false),
+
         
     ]
     

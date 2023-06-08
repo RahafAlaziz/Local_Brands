@@ -57,9 +57,7 @@ struct ProFileView: View {
                             
                         }
                         
-                        Button("dissmis") {
-                           dismiss()
-                        }
+                     
                         
                         .sheet(isPresented: $openCameraRoll){
                             ImagePicker(selectedImage: $imageSelected   , sourceType: .photoLibrary )
@@ -133,6 +131,19 @@ struct ProFileView: View {
             }   .navigationBarTitle("تحرير ملف المتجر الشخصي", displayMode: .inline)
                 
                 .scrollContentBackground(.hidden)
+                .toolbar {
+                    Button() {
+                       dismiss()
+                    } label: {
+                        Image(systemName:"xmark")
+                                .font(.system(size: 16))
+                                .foregroundColor(Color("orange"))
+
+                                
+                        
+                    }
+
+                               }
 
 
         }

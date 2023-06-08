@@ -20,20 +20,15 @@ struct Signin: View {
     var body: some View {
         NavigationView {
             ZStack { Color("offwhite")
-                VStack {
-//                    Button(action: {
-//                        
-//                    }, label: {
+                VStack { 
+//                    Button() {
+//                       dismiss()
+//                    } label: {
 //                        Image(systemName:"xmark")
-//                            .font(.system(size: 18))
-//                            .foregroundColor(Color("orange"))
-//                        dismiss()
+//                                .font(.system(size: 18))
+//                                .foregroundColor(Color("orange"))
 //
-//                    })
-                    
-                    Button("dissmis") {
-                       dismiss()
-                    }
+//                    }
                     TextField("رقم الجوال",text: $input.value)
                         .multilineTextAlignment(.trailing)
                         .padding(.trailing,2)
@@ -93,8 +88,6 @@ struct Signin: View {
                         }
                         .padding(.horizontal)
                         .padding(2)
-                    
-                    
                     TextField("تاكيد كلمة المرور", text: $User)
                         .multilineTextAlignment(.trailing)
                         .padding(.trailing,2)
@@ -106,12 +99,7 @@ struct Signin: View {
                         }
                         .padding(.horizontal)
                         .padding(2)
-                    
-                    //                    .padding(.top,-520)
-                    
-                    //   NavigationLink(destination: ProFileView()){
-                    //         Text("نسيت كلمة المرور ؟")}
-                    //     .padding(.top,-290)
+                
                     Button("سجل معنا") {
                         showingAlert = true }
                     .alert("سيتم التحقق والتواصل معك قريبا عن طريق البريد الالكتروني ", isPresented: $showingAlert) {}
@@ -126,12 +114,23 @@ struct Signin: View {
                 
                 
             }
-//                }  .background(Color("offwhite"))
-//                .edgesIgnoringSafeArea(.all)
+
                 .ignoresSafeArea(.all)
                 .navigationBarTitle("  التسجيل كصاحب متجر ", displayMode: .inline)
                     .scrollContentBackground(.hidden)
-//                    .border(.red)
+                    .toolbar {
+                        Button() {
+                           dismiss()
+                        } label: {
+                            Image(systemName:"xmark")
+                                    .font(.system(size: 16))
+                                    .foregroundColor(Color("orange"))
+
+                                    
+                            
+                        }
+
+                                   }
 
             
         }
@@ -152,47 +151,3 @@ struct Signin: View {
     }
 }
 
-    
-
-
-
-//
-////
-////  button.swift
-////  test image picker
-////
-////  Created by lujain mohammed on 18/11/1444 AH.
-////
-//
-//import SwiftUI
-//
-//struct ProfileView: View {
-//    @Binding var toggleFullScreen:Bool
-//    var body: some View {
-//        VStack(alignment: .center, spacing: 10, content:{
-//            Text("")
-//            Button("close") {
-//                toggleFullScreen.toggle()
-//            }
-//        })
-//    }
-//}
-//
-//
-//struct button: View {
-//    @State var isFullScreenCoverOpen:Bool = false
-//    var body: some View {
-//        Button("Open profile") {
-//            isFullScreenCoverOpen.toggle()
-//        }.fullScreenCover(isPresented: $isFullScreenCoverOpen, content:{
-//            ProfileView(toggleFullScreen: $isFullScreenCoverOpen)
-//        })
-//
-//    }
-//}
-//
-//struct button_Previews: PreviewProvider {
-//    static var previews: some View {
-//        button()
-//    }
-//}

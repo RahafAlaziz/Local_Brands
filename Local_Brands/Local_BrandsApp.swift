@@ -11,7 +11,7 @@ import SwiftUI
 struct Local_BrandsApp: App {
     var body: some Scene {
         WindowGroup {
-            HomePage()
+            ProFileView()
         }
     }
 }

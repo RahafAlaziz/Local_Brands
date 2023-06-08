@@ -25,9 +25,9 @@ struct Favorite: View {
                             
                             
                             NavigationLink(destination: HomePage()
-                                                          .navigationBarBackButtonHidden(true)
+                            .navigationBarBackButtonHidden(true)
                                            
-                                                      ) {
+                                    ) {
                                 Text ("لك")}
                             .foregroundColor(self.top == 1 ? .black : Color.black.opacity(0.45 ))
                             .navigationBarBackButtonHidden(true)
@@ -48,11 +48,6 @@ struct Favorite: View {
                                 .fontWeight(self.top == 0 ? .bold : .none)
                                 .padding(.vertical)
 
-                            
-                            //                            Text("For You")
-                            //                                .foregroundColor(self.top == 1 ? .black : Color.black.opacity(0.45 ))
-                            //                                .fontWeight(self.top == 1 ? .bold : .none)
-                            //                                .padding(.vertical)
                         }
                     }
                     
@@ -80,8 +75,7 @@ struct Favorite: View {
                              .aspectRatio(contentMode: .fill)
                                 .frame(width: 160 ,height: 250)
                                 .cornerRadius(20)
-                            // .offset(x: -0 , y: 30)
-                             //   .shadow(color: .black.opacity(0.2), radius: 11)
+ 
                             
                             Text(" مزرود")
                                 .font(.title3)
@@ -98,25 +92,19 @@ struct Favorite: View {
                              .aspectRatio(contentMode: .fill)
                                 .frame(width: 160 ,height: 250)
                                 .cornerRadius(20)
-                            //    .offset(x: -0 , y: 30)
-                             //   .shadow(color: .black.opacity(0.2), radius: 11)
                             
                             Text(" هودي مزرود")
                                 .font(.title3)
                             .fontWeight(.bold)
                             Text("قميص مزرود للجنسين")
                         }
-                        
-                        
                         VStack{
-                            
                             Image("p3")
                                 .resizable()
                                .aspectRatio(contentMode: .fill)
                                 .frame(width: 160 ,height: 250)
                                 .cornerRadius(20)
-                            //   .offset(x: -0 , y: 30)
-                            //    .shadow(color: .black.opacity(0.2), radius: 11)
+                        
                             
                             Text(" هاكت")
                                 .font(.title3)
@@ -134,9 +122,6 @@ struct Favorite: View {
                                    .aspectRatio(contentMode: .fill)
                                     .frame(width: 160 ,height: 250)
                                     .cornerRadius(20)
-                                //  .offset(x: -0 , y: 30)
-                                 //   .shadow(color: .black.opacity(0.2), radius: 11)
-                                
                                 Text(" مزرود")
                                     .font(.title3)
                                 .fontWeight(.bold)
@@ -149,8 +134,7 @@ struct Favorite: View {
                                     .aspectRatio(contentMode: .fill)
                                     .frame(width: 160 ,height: 250)
                                     .cornerRadius(20)
-                                //    .offset(x: -0 , y: 30)
-                                   // .shadow(color: .black.opacity(0.2), radius: 11)
+                         
                                 
                                 Text(" نايا")
                                     .font(.title3)

@@ -32,7 +32,6 @@ struct TabView1: View {
             
         }
         .tabViewStyle(.page)
-//        .indexViewStyle(.page(backgroundDisplayMode: .always))
     }
 }
 

@@ -35,12 +35,7 @@ struct ContentView: View {
                                     .foregroundColor(Color("orange"))
                             })
                         }
-                //                Button("dissmis") {
-                //                   dismiss()
-                
-                //
-                
-                //
+             
                 ToolbarItemGroup(placement:
                         .navigationBarLeading) {
                             Button(action: {
