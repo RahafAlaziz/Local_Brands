@@ -436,7 +436,6 @@ struct HomePage: View {
                 }
             }
         }
-        
     }
     func image(_ image: Image, show: Bool) -> some View { image
         .tint(isLiked ? .red : .white)
