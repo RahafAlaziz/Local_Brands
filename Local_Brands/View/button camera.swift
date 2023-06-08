@@ -9,77 +9,100 @@
 import SwiftUI
 
 struct button_camera: View {
-    
+    @State var showPicker = false
+    @State var selectedImage : UIImage?
     var body: some View {
-         HStack{
-             
-                                    Button {
-                                    } label: {
-                                        Image(systemName: "camera" )
-                                            .foregroundColor(Color("orange"))
+        
+        VStack{
+            if selectedImage != nil {
+                Image(uiImage: selectedImage!)
+                    .resizable()
+                    .frame(width: 200,height: 200)
+            }
+          
             
-                                            .padding(17)
-                                            .background(Color("gray."))
-                                            .cornerRadius(10)
-                                            .overlay(
-                                                RoundedRectangle(cornerRadius: 10.0)
-                                                    .stroke(lineWidth: 0.20)
-                                            )
-                                    }
-             
-             
-             Button {
-             }label: {
+            HStack{
+                Button {
+                    showPicker = true
+                } label: {
+                    Image(systemName: "camera" )
+                        .foregroundColor(Color("orange"))
+                    //                    .sheet(isPresented: $showPicker ,onDismiss: nil) { ImagePicker3(selectedImage: $selectedImage , showPicker: $showPicker)
+                    //
+                        .padding(17)
+                        .background(Color("gray."))
+                        .cornerRadius(10)
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 10.0)
+                                .stroke(lineWidth: 0.20)
+                        )
+                }
                 
-                                        Image(systemName: "camera" )
-                                            .foregroundColor(Color("orange"))
-            
-                                            .padding(17)
-                                            .background(Color("gray."))
-                                            .cornerRadius(10)
-                                            .overlay(
-                                                RoundedRectangle(cornerRadius: 10.0)
-                                                    .stroke(lineWidth: 0.20)
-            
-                                            )
-                                          
-            
-                                    }
+                
+                Button {
+                    showPicker = true
+                }label: {
+                    
+                    Image(systemName: "camera" )
+                        .foregroundColor(Color("orange"))
+                        .padding(17)
+                        .background(Color("gray."))
+                        .cornerRadius(10)
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 10.0)
+                                .stroke(lineWidth: 0.20))
+                        .sheet(isPresented: $showPicker ,onDismiss: nil) { ImagePicker3(selectedImage: $selectedImage , showPicker: $showPicker)
+                            //                                .padding(17)
+                            //                                .background(Color("gray."))
+                            //                                .cornerRadius(10)
+                            //                                .overlay(
+                            //                                    RoundedRectangle(cornerRadius: 10.0)
+                            //                                        .stroke(lineWidth: 0.20))
+                        }
+                }
+                
+                Button {
+                    showPicker = true
+                    
+                } label: {
+                    Image(systemName: "camera" )
+                    
+                        .foregroundColor(Color("orange"))
+                        .padding(17)
+                        .background(Color("gray."))
+                        .cornerRadius(10)
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 10.0)
+                                .stroke(lineWidth: 0.20))
+                        .sheet(isPresented: $showPicker ,onDismiss: nil) { ImagePicker3(selectedImage: $selectedImage , showPicker: $showPicker)
                             
-                                    Button {
-            
-                                    } label: {
-                                        Image(systemName: "camera" )
-                                            .foregroundColor(Color("orange"))
-            
-                                            .padding(17)
-                                            .background(Color("gray."))
-                                            .cornerRadius(10)
-                                            .overlay(
-                                                RoundedRectangle(cornerRadius: 10.0)
-                                                    .stroke(lineWidth: 0.20)
-                                            )
-                                    }
-                                    Button {
-            
-                                    } label: {
-                                        Image(systemName: "camera" )
-                                            .foregroundColor(Color("orange"))
-            
-                                            .padding(17)
-                                            .background(Color("gray."))
-                                            .cornerRadius(10)
-                                            .overlay(
-                                                RoundedRectangle(cornerRadius: 10.0)
-                                                    .stroke(lineWidth: 0.20)
-            
-                                            )
-                                    }
-            
-                                }
-      
-    }
-}
+                        }
+                }
+                Button {
+                    showPicker = true
+                    
+                } label: {
+                    Image(systemName: "camera" )
+                        .foregroundColor(Color("orange"))
+                    
+                        .padding(17)
+                        .background(Color("gray."))
+                        .cornerRadius(10)
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 10.0)
+                                .stroke(lineWidth: 0.20)
+                            
+                        )
+                }
+                
+            }
+                }
+                
+                
+            }
+        }
+    
+
 
 struct button_camera_Previews: PreviewProvider {
     static var previews: some View {

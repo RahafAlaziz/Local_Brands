@@ -148,7 +148,6 @@
 			children = (
 				37E32B0E2A2B61ED006F6582 /* ContentView.swift */,
 				37E32B1F2A2B6513006F6582 /* Sign in.swift */,
-				378C13EB2A2EB11600484CEC /* ImagePicker3.swift */,
 				37E32B212A2B6521006F6582 /* Edit.swift */,
 				37E32B232A2B653B006F6582 /* ImagePicker.swift */,
 				37E32B272A2B6567006F6582 /* ProfileHeader.swift */,
@@ -158,6 +157,7 @@
 				37E32B2D2A2B658C006F6582 /* share.swift */,
 				37E32B2F2A2B65A4006F6582 /* See More Details.swift */,
 				378C13E72A2C30D700484CEC /* TabView.swift */,
+				378C13EB2A2EB11600484CEC /* ImagePicker3.swift */,
 				37E32B312A2B65B2006F6582 /* button camera.swift */,
 				43C2A42D2A2FC1F700D4B05A /* SearchPage.swift */,
 				43C2A42F2A2FC2CE00D4B05A /* SearchBar.swift */,
