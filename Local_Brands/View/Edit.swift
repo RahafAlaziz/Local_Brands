@@ -16,7 +16,7 @@ struct ProFileView: View {
     @State private var showingAlert = false
     @State private var User = ""
     @State private var NO = ""
-           
+    @Environment(\.dismiss) var dismiss
     var body: some View {
         NavigationView {
 
@@ -29,7 +29,7 @@ struct ProFileView: View {
                                 changeProFileImage = true
                                 openCameraRoll = true
                                 
-                                
+                              
                                 
                             }, label: {
                                 if changeProFileImage {
@@ -47,6 +47,7 @@ struct ProFileView: View {
                                 }
                             })
                             
+                            
                             Image(systemName: "plus")
                                 .frame(width: 30,height: 30)
                                 .foregroundColor(.white)
@@ -56,10 +57,15 @@ struct ProFileView: View {
                             
                         }
                         
+                        Button("dissmis") {
+                           dismiss()
+                        }
+                        
                         .sheet(isPresented: $openCameraRoll){
                             ImagePicker(selectedImage: $imageSelected   , sourceType: .photoLibrary )
                             
                         }
+                        
                         Spacer()
                     }
                     

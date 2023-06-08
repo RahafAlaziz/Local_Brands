@@ -58,54 +58,55 @@ struct ProfileHeader: View {
                     
                     
                 }
-            }                    .toolbar {
-                ToolbarItemGroup(placement:
-                        .navigationBarLeading) {
-                            
-                            
-                            Button(action: {
-                                isShowingSheet = true
-                            }, label: {
-                                Image(systemName: "plus.app")
-                                    .font(.system(size: 18))
-                                    .foregroundColor(Color("orange"))
-                            })
-                        }
-                //                Button("dissmis") {
-                //                   dismiss()
-                
-                //
-                
-                //
-                ToolbarItemGroup(placement:
-                        .navigationBarLeading) {
-                            Button(action: {
-                                
-                            }, label: {
-                                
-                                NavigationLink(destination: ProFileView()
-                                    .navigationBarBackButtonHidden(true)){
-                                        Text("")
-                                        Image(systemName: "pencil.circle")
-                                            .font(.system(size: 18))
-                                        .foregroundColor(Color("orange"))}
-                            })
-                        }
-                
-                ToolbarItem(placement:
-                        .navigationBarTrailing) {
-                            Button(action: {
-                                
-                            }, label: {
-                                Image(systemName:"chevron.forward")
-                                    .font(.system(size: 18))
-                                    .foregroundColor(Color("orange"))
-                            })
-                        }
-                
+                //            }                    .toolbar {
+                //                ToolbarItemGroup(placement:
+                //                        .navigationBarLeading) {
+                //                            
+                //                            
+                //                            Button(action: {
+                //                                isShowingSheet = true
+                //                            }, label: {
+                //                                Image(systemName: "plus.app")
+                //                                    .font(.system(size: 18))
+                //                                    .foregroundColor(Color("orange"))
+                //                            })
+                //                        }
+                //                //                Button("dissmis") {
+                //                //                   dismiss()
+                //                
+                //                //
+                //                
+                //                //
+                //                ToolbarItemGroup(placement:
+                //                        .navigationBarLeading) {
+                //                            Button(action: {
+                //                                
+                //                            }, label: {
+                //                                
+                //                                NavigationLink(destination: ProFileView()
+                //                                    .navigationBarBackButtonHidden(true)){
+                //                                        Text("")
+                //                                        Image(systemName: "pencil.circle")
+                //                                            .font(.system(size: 18))
+                //                                        .foregroundColor(Color("orange"))}
+                //                            })
+                //                        }
+                //                
+                //                ToolbarItem(placement:
+                //                        .navigationBarTrailing) {
+                //                            Button(action: {
+                //                                
+                //                            }, label: {
+                //                                Image(systemName:"chevron.forward")
+                //                                    .font(.system(size: 18))
+                //                                    .foregroundColor(Color("orange"))
+                //                            })
+                //                        }
+                //                
+                //            }
+                //            .navigationTitle("MZROD")
+                //            .navigationBarTitleDisplayMode(.inline)
             }
-            .navigationTitle("MZROD")
-            .navigationBarTitleDisplayMode(.inline)
         }
     }
     
