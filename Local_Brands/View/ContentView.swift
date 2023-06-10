@@ -1,13 +1,13 @@
 import SwiftUI
 import ASCollectionView
-//import FirebaseCore
+
+
 struct ContentView: View {
     @ObservedObject var viewModel = PostViewModel()
     @State var isShowingSheet: Bool = false
 
-//    @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
 
-    
+
     var body: some View {
         NavigationView{
             VStack {
@@ -25,8 +25,8 @@ struct ContentView: View {
             .toolbar {
                 ToolbarItemGroup(placement:
                         .navigationBarLeading) {
-                            
-                            
+
+
                             Button(action: {
                                 isShowingSheet = true
                             }, label: {
@@ -35,13 +35,13 @@ struct ContentView: View {
                                     .foregroundColor(Color("orange"))
                             })
                         }
-             
+
                 ToolbarItemGroup(placement:
                         .navigationBarLeading) {
                             Button(action: {
-                                
+
                             }, label: {
-                                
+
                                 NavigationLink(destination: ProFileView()
                                     .navigationBarBackButtonHidden(true)){
                                         Text("")
@@ -50,18 +50,18 @@ struct ContentView: View {
                                         .foregroundColor(Color("orange"))}
                             })
                         }
-                
+
                 ToolbarItem(placement:
                         .navigationBarTrailing) {
                             Button(action: {
-                                
+
                             }, label: {
                                 Image(systemName:"chevron.forward")
                                     .font(.system(size: 18))
                                     .foregroundColor(Color("orange"))
                             })
                         }
-                
+
             }
             .navigationTitle("MZROD")
             .navigationBarTitleDisplayMode(.inline)
@@ -71,28 +71,27 @@ struct ContentView: View {
                         ASCollectionLayout(scrollDirection: .vertical, interSectionSpacing: 0) {
                             ASCollectionLayoutSection{
                                 let width = NSCollectionLayoutDimension.fractionalWidth(1/3)
-            
+
                                 let layouSize = NSCollectionLayoutSize(widthDimension: width,
                                                                        heightDimension: .fractionalHeight(1.0))
-            
+
                                 let item = NSCollectionLayoutItem(layoutSize: layouSize)
-            
-            
+
+
                                 let inset = CGFloat(0.5)
                                 item.contentInsets = NSDirectionalEdgeInsets(top: inset, leading: inset,
                                                                              bottom: inset, trailing: inset)
-            
+
                                 let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0),
                                                                       heightDimension: width)
-            
-            
+
+
                                 let itemGroup = NSCollectionLayoutGroup.horizontal(layoutSize: itemSize, subitems: [item])
-            
+
                                 return NSCollectionLayoutSection(group: itemGroup)
-            
+
                             }
                         }
                     }
                 }
-     
-//FirebaseApp.configure()
+

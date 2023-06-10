@@ -16,7 +16,7 @@ struct Signin: View {
     @State  var NO = ""
     @State  var Pass = ""
     @State  var Ne = ""
-    @State var showPassword: Bool = false
+    @State  var showPassword: Bool = false
 //     @State var email = ""
 //    @State var password = ""
     @Binding var isShowingFullScreen1: Bool
