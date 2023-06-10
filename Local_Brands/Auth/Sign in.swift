@@ -6,29 +6,37 @@
 //
 
 import SwiftUI
+import Firebase
+//import FirebaseCore
 struct Signin: View {
-    @State private var showingAlert = false
+    @State  var showingAlert = false
     @ObservedObject var input = NumbersOnly()
-    @State private var ProFileView = ""
-    @State private var User = ""
-    @State private var NO = ""
-    @State private var Pass = ""
-    @State private var Ne = ""
+    @State  var ProFileView = ""
+    @State  var User = ""
+    @State  var NO = ""
+    @State  var Pass = ""
+    @State  var Ne = ""
     @State var showPassword: Bool = false
+//     @State var email = ""
+//    @State var password = ""
     @Binding var isShowingFullScreen1: Bool
     @Environment(\.dismiss) var dismiss
+    
+    
+    
+    
     var body: some View {
         NavigationView {
             ZStack { Color("offwhite")
-                VStack { 
-//                    Button() {
-//                       dismiss()
-//                    } label: {
-//                        Image(systemName:"xmark")
-//                                .font(.system(size: 18))
-//                                .foregroundColor(Color("orange"))
-//
-//                    }
+                VStack {
+                    //                    Button() {
+                    //                       dismiss()
+                    //                    } label: {
+                    //                        Image(systemName:"xmark")
+                    //                                .font(.system(size: 18))
+                    //                                .foregroundColor(Color("orange"))
+                    //
+                    //                    }
                     TextField("رقم الجوال",text: $input.value)
                         .multilineTextAlignment(.trailing)
                         .padding(.trailing,2)
@@ -99,7 +107,7 @@ struct Signin: View {
                         }
                         .padding(.horizontal)
                         .padding(2)
-                
+                    
                     Button("سجل معنا") {
                         showingAlert = true }
                     .alert("سيتم التحقق والتواصل معك قريبا عن طريق البريد الالكتروني ", isPresented: $showingAlert) {}
@@ -114,28 +122,46 @@ struct Signin: View {
                 
                 
             }
-
-                .ignoresSafeArea(.all)
-                .navigationBarTitle("  التسجيل كصاحب متجر ", displayMode: .inline)
-                    .scrollContentBackground(.hidden)
-                    .toolbar {
-                        Button() {
-                           dismiss()
-                        } label: {
-                            Image(systemName:"xmark")
-                                    .font(.system(size: 16))
-                                    .foregroundColor(Color("orange"))
-
-                                    
-                            
-                        }
-
-                                   }
+            
+            .ignoresSafeArea(.all)
+            .navigationBarTitle("  التسجيل كصاحب متجر ", displayMode: .inline)
+            .scrollContentBackground(.hidden)
+            .toolbar {
+                Button() {
+                    dismiss()
+                } label: {
+                    Image(systemName:"xmark")
+                        .font(.system(size: 16))
+                        .foregroundColor(Color("orange"))
+                    
+                    
+                    
+                }
+                
+            }
+//            func Signin() {
+//                Auth.auth().logain(withEmail: email, password: password) { (result, error) in
+//                    if error != nil {
+//                        print(error?.localizedDescription ?? "")
+//                    } else {
+//                        print("success")
+//                    }
+//                }
+//            }
+        }
 
             
         }
     }
-    
+//func signin() {
+//    Firebase.Auth.auth().signIn(with: <#T##AuthCredential#>)(withEmail: User, password: ProFileView) { (result, error) in
+//        if error != nil {
+//            print(error?.localizedDescription ?? "")
+//        } else {
+//            print("success")
+//        }
+//    }
+//}
     class NumbersOnly: ObservableObject{
         @Published var value = "" {
             didSet {
@@ -149,5 +175,44 @@ struct Signin: View {
             }
         }
     }
-}
+//struct Signin_Previews: PreviewProvider {
+//    static var previews: some View {
+//        Signin()
+//    }
+//}
 
+
+
+//struct FirebaseLoginApp: App {
+//    init() {
+//        FirebaseApp.configure()
+//    }
+//    var body: some Scene {
+//        WindowGroup {
+//            ContentView()
+//        }
+//    }
+//}
+
+//var body: some View {
+//        VStack {
+//            TextField("Email", text: $email)
+//            SecureField("Password", text: $password)
+//            Button(action: { login() }) {
+//                Text("Sign in")
+//            }
+//        }
+//        .padding()
+//    }
+//
+//    func login() {
+//        Auth.auth().signIn(withEmail: email, password: password) { (result, error) in
+//            if error != nil {
+//                print(error?.localizedDescription ?? "")
+//            } else {
+//                print("success")
+//            }
+//        }
+//    }
+//}
+//

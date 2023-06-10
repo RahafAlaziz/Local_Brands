@@ -1,12 +1,12 @@
 import SwiftUI
 import ASCollectionView
-
+//import FirebaseCore
 struct ContentView: View {
     @ObservedObject var viewModel = PostViewModel()
     @State var isShowingSheet: Bool = false
 
+//    @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
 
-    
     
     var body: some View {
         NavigationView{
@@ -95,3 +95,4 @@ struct ContentView: View {
                     }
                 }
      
+//FirebaseApp.configure()
